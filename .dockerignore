@@ -1,0 +1,13 @@
+.git
+.venv
+**/__pycache__
+data
+artifacts
+logs
+frontend/node_modules
+frontend/dist
+mlruns
+reports
+tracking
+.pytest_cache
+.ruff_cache

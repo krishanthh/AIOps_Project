@@ -1,0 +1,14 @@
+[
+  {
+    "run_id": "6d3f391a229a464fb61d805da5fa66d3",
+    "learning_rate": 0.001,
+    "validation_macro_f1": 0.9276094691888257,
+    "seconds": 3.9111106650088914
+  },
+  {
+    "run_id": "9a212d427cac4996b2d9a35e542abfff",
+    "learning_rate": 0.0003,
+    "validation_macro_f1": 0.9127145896184098,
+    "seconds": 3.6899932020169217
+  }
+]

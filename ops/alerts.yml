@@ -1,0 +1,28 @@
+groups:
+  - name: brainai
+    rules:
+      - alert: ModelUnavailable
+        expr: brainai_model_available == 0
+        for: 1m
+        labels: {severity: warning}
+        annotations: {summary: MLflow serving is unavailable}
+      - alert: BackendDown
+        expr: up{job="backend"} == 0
+        for: 1m
+        labels: {severity: critical}
+        annotations: {summary: FastAPI cannot be scraped}
+      - alert: SlowPrediction
+        expr: histogram_quantile(0.95, sum by (le) (rate(brainai_request_seconds_bucket{route="/api/v1/predict"}[5m]))) > 10
+        for: 2m
+        labels: {severity: warning}
+        annotations: {summary: Prediction p95 exceeds ten seconds}
+      - alert: ImageDistributionShift
+        expr: brainai_brightness_drift_zscore > 2
+        for: 1m
+        labels: {severity: warning}
+        annotations: {summary: Recent image brightness differs from training baseline}
+      - alert: TrackingUnavailable
+        expr: brainai_tracking_available == 0
+        for: 1m
+        labels: {severity: warning}
+        annotations: {summary: MLflow tracking is unavailable}

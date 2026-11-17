@@ -1,0 +1,9 @@
+name: brain-tumour-ai
+python_env: python_env.yaml
+entry_points:
+  main:
+    command: python -m brainai.pipeline
+  train:
+    command: python -m brainai.train
+  evaluate:
+    command: python -m brainai.evaluate evaluate

@@ -1,0 +1,6255 @@
+{
+  "counts": {
+    "train": {
+      "glioma": 1117,
+      "meningioma": 1030,
+      "notumor": 1006,
+      "pituitary": 1086
+    },
+    "val": {
+      "glioma": 279,
+      "meningioma": 258,
+      "notumor": 251,
+      "pituitary": 272
+    },
+    "test": {
+      "glioma": 383,
+      "meningioma": 396,
+      "notumor": 400,
+      "pituitary": 400
+    }
+  },
+  "rejected": [],
+  "exact_duplicates_removed": [
+    {
+      "removed": "data/raw/Testing/glioma/Te-gl_178.jpg",
+      "retained": "data/raw/Testing/glioma/Te-gl_170.jpg"
+    },
+    {
+      "removed": "data/raw/Testing/glioma/Te-gl_225.jpg",
+      "retained": "data/raw/Testing/glioma/Te-gl_216.jpg"
+    },
+    {
+      "removed": "data/raw/Testing/glioma/Te-gl_228.jpg",
+      "retained": "data/raw/Testing/glioma/Te-gl_171.jpg"
+    },
+    {
+      "removed": "data/raw/Testing/glioma/Te-gl_238.jpg",
+      "retained": "data/raw/Testing/glioma/Te-gl_140.jpg"
+    },
+    {
+      "removed": "data/raw/Testing/glioma/Te-gl_259.jpg",
+      "retained": "data/raw/Testing/glioma/Te-gl_204.jpg"
+    },
+    {
+      "removed": "data/raw/Testing/glioma/Te-gl_272.jpg",
+      "retained": "data/raw/Testing/glioma/Te-gl_212.jpg"
+    },
+    {
+      "removed": "data/raw/Testing/glioma/Te-gl_278.jpg",
+      "retained": "data/raw/Testing/glioma/Te-gl_166.jpg"
+    },
+    {
+      "removed": "data/raw/Testing/glioma/Te-gl_29.jpg",
+      "retained": "data/raw/Testing/glioma/Te-gl_270.jpg"
+    },
+    {
+      "removed": "data/raw/Testing/glioma/Te-gl_303.jpg",
+      "retained": "data/raw/Testing/glioma/Te-gl_129.jpg"
+    },
+    {
+      "removed": "data/raw/Testing/glioma/Te-gl_338.jpg",
+      "retained": "data/raw/Testing/glioma/Te-gl_212.jpg"
+    },
+    {
+      "removed": "data/raw/Testing/glioma/Te-gl_359.jpg",
+      "retained": "data/raw/Testing/glioma/Te-gl_162.jpg"
+    },
+    {
+      "removed": "data/raw/Testing/glioma/Te-gl_36.jpg",
+      "retained": "data/raw/Testing/glioma/Te-gl_177.jpg"
+    },
+    {
+      "removed": "data/raw/Testing/glioma/Te-gl_364.jpg",
+      "retained": "data/raw/Testing/glioma/Te-gl_299.jpg"
+    },
+    {
+      "removed": "data/raw/Testing/glioma/Te-gl_389.jpg",
+      "retained": "data/raw/Testing/glioma/Te-gl_32.jpg"
+    },
+    {
+      "removed": "data/raw/Testing/glioma/Te-gl_59.jpg",
+      "retained": "data/raw/Testing/glioma/Te-gl_144.jpg"
+    },
+    {
+      "removed": "data/raw/Testing/glioma/Te-gl_72.jpg",
+      "retained": "data/raw/Testing/glioma/Te-gl_143.jpg"
+    },
+    {
+      "removed": "data/raw/Testing/glioma/Te-gl_85.jpg",
+      "retained": "data/raw/Testing/glioma/Te-gl_253.jpg"
+    },
+    {
+      "removed": "data/raw/Testing/meningioma/Te-me_198.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_179.jpg"
+    },
+    {
+      "removed": "data/raw/Testing/meningioma/Te-me_235.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_116.jpg"
+    },
+    {
+      "removed": "data/raw/Testing/meningioma/Te-me_45.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_182.jpg"
+    },
+    {
+      "removed": "data/raw/Testing/meningioma/Te-me_70.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_295.jpg"
+    },
+    {
+      "removed": "data/raw/Training/glioma/Tr-gl_1057.jpg",
+      "retained": "data/raw/Testing/glioma/Te-gl_311.jpg"
+    },
+    {
+      "removed": "data/raw/Training/glioma/Tr-gl_1271.jpg",
+      "retained": "data/raw/Testing/glioma/Te-gl_169.jpg"
+    },
+    {
+      "removed": "data/raw/Training/glioma/Tr-gl_361.jpg",
+      "retained": "data/raw/Testing/glioma/Te-gl_299.jpg"
+    },
+    {
+      "removed": "data/raw/Training/glioma/Tr-gl_420.jpg",
+      "retained": "data/raw/Testing/glioma/Te-gl_233.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_1044.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_157.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_1057.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_270.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_1069.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_2.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_1083.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_5.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_109.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_30.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_1091.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_95.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_110.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_174.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_1110.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_42.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_1112.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_165.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_1121.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_86.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_1122.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_159.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_1146.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_241.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_1163.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_274.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_1166.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_31.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_1168.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_71.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_1194.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_158.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_1198.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_66.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_1225.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_39.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_1242.jpg",
+      "retained": "data/raw/Training/meningioma/Tr-aug-me_90.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_1249.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_266.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_126.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_265.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_1262.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_207.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_1274.jpg",
+      "retained": "data/raw/Training/meningioma/Tr-aug-me_98.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_1286.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_4.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_1289.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_285.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_1290.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_37.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_1295.jpg",
+      "retained": "data/raw/Training/meningioma/Tr-aug-me_95.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_131.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_93.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_145.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_296.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_154.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_52.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_158.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_231.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_167.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_276.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_19.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_184.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_200.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_54.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_205.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_232.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_219.jpg",
+      "retained": "data/raw/Training/meningioma/Tr-me_1094.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_238.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_230.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_239.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_167.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_245.jpg",
+      "retained": "data/raw/Training/meningioma/Tr-aug-me_91.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_268.jpg",
+      "retained": "data/raw/Training/meningioma/Tr-aug-me_92.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_3.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_195.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_330.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_216.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_331.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_18.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_339.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_116.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_36.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_1.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_373.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_20.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_404.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_101.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_421.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_208.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_424.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_49.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_432.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_179.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_437.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_197.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_450.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_251.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_453.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_171.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_458.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_96.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_465.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_202.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_468.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_50.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_472.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_190.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_479.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_278.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_486.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_8.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_489.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_213.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_497.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_228.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_50.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_277.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_52.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_187.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_530.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_105.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_532.jpg",
+      "retained": "data/raw/Training/meningioma/Tr-aug-me_97.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_534.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_116.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_543.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_252.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_553.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_259.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_557.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_138.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_561.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_179.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_583.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_82.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_597.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_290.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_616.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_180.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_639.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_214.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_661.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_205.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_666.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_137.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_678.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_62.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_684.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_29.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_688.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_229.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_706.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_121.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_714.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_61.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_715.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_9.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_717.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_75.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_726.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_252.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_737.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_175.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_740.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_81.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_753.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_206.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_758.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_162.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_760.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_234.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_771.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_19.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_776.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_253.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_799.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_293.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_824.jpg",
+      "retained": "data/raw/Training/meningioma/Tr-aug-me_94.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_836.jpg",
+      "retained": "data/raw/Training/meningioma/Tr-me_1101.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_845.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_126.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_846.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_117.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_86.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_116.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_865.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_111.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_877.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_109.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_880.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_243.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_889.jpg",
+      "retained": "data/raw/Training/meningioma/Tr-aug-me_89.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_897.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_279.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_905.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_83.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_920.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_219.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_946.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_94.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_954.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_280.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_957.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_156.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_960.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_149.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_962.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_113.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_965.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_223.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_980.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_288.jpg"
+    },
+    {
+      "removed": "data/raw/Training/meningioma/Tr-me_99.jpg",
+      "retained": "data/raw/Testing/meningioma/Te-me_26.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_1004.jpg",
+      "retained": "data/raw/Testing/notumor/Te-no_194.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_105.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1000.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_109.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1062.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_1096.jpg",
+      "retained": "data/raw/Testing/notumor/Te-no_77.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_1134.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1061.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_1158.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1051.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_1178.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_112.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_1183.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1062.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_1188.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_115.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_121.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_116.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_1234.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1145.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_1235.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1154.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_1253.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1194.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_1265.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_112.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_129.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1079.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_1319.jpg",
+      "retained": "data/raw/Testing/notumor/Te-no_92.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_1320.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1179.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_133.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1245.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_1339.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1015.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_1360.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1154.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_1380.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1109.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_1383.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_138.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_1385.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1039.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_1392.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1244.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_1400.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1077.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_147.jpg",
+      "retained": "data/raw/Testing/notumor/Te-no_167.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_154.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1203.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_156.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1289.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_165.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1336.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_17.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1395.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_217.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1083.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_219.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_194.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_230.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_168.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_232.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_224.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_235.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1334.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_247.jpg",
+      "retained": "data/raw/Testing/notumor/Te-no_150.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_255.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_134.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_273.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1333.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_275.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1295.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_281.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1290.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_29.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_224.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_308.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_112.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_330.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1051.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_341.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1302.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_362.jpg",
+      "retained": "data/raw/Testing/notumor/Te-no_365.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_371.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1062.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_380.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1267.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_387.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1267.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_400.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1023.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_410.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1208.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_411.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1326.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_412.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1070.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_420.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1187.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_430.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1145.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_44.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1190.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_448.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_280.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_454.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1046.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_463.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_356.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_472.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_250.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_475.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1316.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_48.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_14.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_490.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1291.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_492.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_433.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_494.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_112.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_5.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1062.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_503.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1021.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_516.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1398.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_534.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1378.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_543.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_539.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_550.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1281.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_564.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1126.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_565.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1390.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_569.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1105.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_581.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_40.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_582.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_421.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_594.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1169.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_60.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_293.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_600.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1039.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_606.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1261.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_617.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_524.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_62.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1079.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_63.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_423.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_636.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_388.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_639.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1205.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_642.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1393.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_660.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1397.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_664.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_493.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_677.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1180.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_69.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1095.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_692.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1085.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_693.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1062.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_699.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1309.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_720.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_447.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_725.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1203.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_73.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_56.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_734.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_499.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_738.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_168.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_747.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_3.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_749.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1140.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_753.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_540.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_755.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_435.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_760.jpg",
+      "retained": "data/raw/Testing/notumor/Te-no_315.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_764.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_577.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_767.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1085.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_778.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_473.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_779.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_349.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_781.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1244.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_8.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_315.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_81.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_721.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_810.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1379.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_817.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_649.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_819.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1016.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_825.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1330.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_831.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1288.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_832.jpg",
+      "retained": "data/raw/Testing/notumor/Te-no_121.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_839.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_447.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_840.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1374.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_843.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_750.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_846.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_292.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_854.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1154.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_863.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1288.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_864.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1063.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_866.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_455.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_889.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1346.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_906.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_58.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_911.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1274.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_916.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_304.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_918.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_880.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_92.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_518.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_920.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_486.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_93.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_638.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_930.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_698.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_931.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1140.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_935.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_315.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_946.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_813.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_963.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_43.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_967.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_766.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_969.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_933.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_970.jpg",
+      "retained": "data/raw/Testing/notumor/Te-no_159.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_98.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1085.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_989.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_588.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_990.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_1240.jpg"
+    },
+    {
+      "removed": "data/raw/Training/notumor/Tr-no_995.jpg",
+      "retained": "data/raw/Training/notumor/Tr-no_673.jpg"
+    },
+    {
+      "removed": "data/raw/Training/pituitary/Tr-pi_1071.jpg",
+      "retained": "data/raw/Training/pituitary/Tr-pi_1023.jpg"
+    },
+    {
+      "removed": "data/raw/Training/pituitary/Tr-pi_1155.jpg",
+      "retained": "data/raw/Training/pituitary/Tr-pi_1098.jpg"
+    },
+    {
+      "removed": "data/raw/Training/pituitary/Tr-pi_1196.jpg",
+      "retained": "data/raw/Training/pituitary/Tr-pi_1122.jpg"
+    },
+    {
+      "removed": "data/raw/Training/pituitary/Tr-pi_1207.jpg",
+      "retained": "data/raw/Training/pituitary/Tr-pi_1023.jpg"
+    },
+    {
+      "removed": "data/raw/Training/pituitary/Tr-pi_1211.jpg",
+      "retained": "data/raw/Training/pituitary/Tr-pi_1154.jpg"
+    },
+    {
+      "removed": "data/raw/Training/pituitary/Tr-pi_1320.jpg",
+      "retained": "data/raw/Training/pituitary/Tr-pi_1133.jpg"
+    },
+    {
+      "removed": "data/raw/Training/pituitary/Tr-pi_1339.jpg",
+      "retained": "data/raw/Training/pituitary/Tr-pi_1154.jpg"
+    },
+    {
+      "removed": "data/raw/Training/pituitary/Tr-pi_1352.jpg",
+      "retained": "data/raw/Training/pituitary/Tr-pi_1209.jpg"
+    },
+    {
+      "removed": "data/raw/Training/pituitary/Tr-pi_1380.jpg",
+      "retained": "data/raw/Training/pituitary/Tr-pi_1098.jpg"
+    },
+    {
+      "removed": "data/raw/Training/pituitary/Tr-pi_160.jpg",
+      "retained": "data/raw/Training/pituitary/Tr-pi_1154.jpg"
+    },
+    {
+      "removed": "data/raw/Training/pituitary/Tr-pi_195.jpg",
+      "retained": "data/raw/Training/pituitary/Tr-pi_1399.jpg"
+    },
+    {
+      "removed": "data/raw/Training/pituitary/Tr-pi_261.jpg",
+      "retained": "data/raw/Training/pituitary/Tr-pi_1309.jpg"
+    },
+    {
+      "removed": "data/raw/Training/pituitary/Tr-pi_306.jpg",
+      "retained": "data/raw/Training/pituitary/Tr-pi_17.jpg"
+    },
+    {
+      "removed": "data/raw/Training/pituitary/Tr-pi_320.jpg",
+      "retained": "data/raw/Training/pituitary/Tr-pi_311.jpg"
+    },
+    {
+      "removed": "data/raw/Training/pituitary/Tr-pi_384.jpg",
+      "retained": "data/raw/Training/pituitary/Tr-pi_1187.jpg"
+    },
+    {
+      "removed": "data/raw/Training/pituitary/Tr-pi_397.jpg",
+      "retained": "data/raw/Training/pituitary/Tr-pi_286.jpg"
+    },
+    {
+      "removed": "data/raw/Training/pituitary/Tr-pi_405.jpg",
+      "retained": "data/raw/Training/pituitary/Tr-pi_206.jpg"
+    },
+    {
+      "removed": "data/raw/Training/pituitary/Tr-pi_430.jpg",
+      "retained": "data/raw/Training/pituitary/Tr-pi_221.jpg"
+    },
+    {
+      "removed": "data/raw/Training/pituitary/Tr-pi_461.jpg",
+      "retained": "data/raw/Training/pituitary/Tr-pi_1252.jpg"
+    },
+    {
+      "removed": "data/raw/Training/pituitary/Tr-pi_476.jpg",
+      "retained": "data/raw/Training/pituitary/Tr-pi_396.jpg"
+    },
+    {
+      "removed": "data/raw/Training/pituitary/Tr-pi_504.jpg",
+      "retained": "data/raw/Training/pituitary/Tr-pi_163.jpg"
+    },
+    {
+      "removed": "data/raw/Training/pituitary/Tr-pi_515.jpg",
+      "retained": "data/raw/Training/pituitary/Tr-pi_410.jpg"
+    },
+    {
+      "removed": "data/raw/Training/pituitary/Tr-pi_528.jpg",
+      "retained": "data/raw/Training/pituitary/Tr-pi_1252.jpg"
+    },
+    {
+      "removed": "data/raw/Training/pituitary/Tr-pi_564.jpg",
+      "retained": "data/raw/Training/pituitary/Tr-pi_132.jpg"
+    },
+    {
+      "removed": "data/raw/Training/pituitary/Tr-pi_634.jpg",
+      "retained": "data/raw/Training/pituitary/Tr-pi_206.jpg"
+    },
+    {
+      "removed": "data/raw/Training/pituitary/Tr-pi_668.jpg",
+      "retained": "data/raw/Training/pituitary/Tr-pi_1181.jpg"
+    },
+    {
+      "removed": "data/raw/Training/pituitary/Tr-pi_698.jpg",
+      "retained": "data/raw/Training/pituitary/Tr-pi_246.jpg"
+    },
+    {
+      "removed": "data/raw/Training/pituitary/Tr-pi_75.jpg",
+      "retained": "data/raw/Training/pituitary/Tr-pi_464.jpg"
+    },
+    {
+      "removed": "data/raw/Training/pituitary/Tr-pi_759.jpg",
+      "retained": "data/raw/Training/pituitary/Tr-pi_356.jpg"
+    },
+    {
+      "removed": "data/raw/Training/pituitary/Tr-pi_763.jpg",
+      "retained": "data/raw/Training/pituitary/Tr-pi_120.jpg"
+    },
+    {
+      "removed": "data/raw/Training/pituitary/Tr-pi_77.jpg",
+      "retained": "data/raw/Training/pituitary/Tr-pi_356.jpg"
+    },
+    {
+      "removed": "data/raw/Training/pituitary/Tr-pi_812.jpg",
+      "retained": "data/raw/Training/pituitary/Tr-pi_193.jpg"
+    },
+    {
+      "removed": "data/raw/Training/pituitary/Tr-pi_857.jpg",
+      "retained": "data/raw/Training/pituitary/Tr-pi_542.jpg"
+    },
+    {
+      "removed": "data/raw/Training/pituitary/Tr-pi_863.jpg",
+      "retained": "data/raw/Training/pituitary/Tr-pi_1187.jpg"
+    },
+    {
+      "removed": "data/raw/Training/pituitary/Tr-pi_878.jpg",
+      "retained": "data/raw/Training/pituitary/Tr-pi_805.jpg"
+    },
+    {
+      "removed": "data/raw/Training/pituitary/Tr-pi_883.jpg",
+      "retained": "data/raw/Training/pituitary/Tr-pi_221.jpg"
+    },
+    {
+      "removed": "data/raw/Training/pituitary/Tr-pi_928.jpg",
+      "retained": "data/raw/Training/pituitary/Tr-pi_206.jpg"
+    },
+    {
+      "removed": "data/raw/Training/pituitary/Tr-pi_943.jpg",
+      "retained": "data/raw/Training/pituitary/Tr-pi_1122.jpg"
+    },
+    {
+      "removed": "data/raw/Training/pituitary/Tr-pi_962.jpg",
+      "retained": "data/raw/Training/pituitary/Tr-pi_285.jpg"
+    },
+    {
+      "removed": "data/raw/Training/pituitary/Tr-pi_969.jpg",
+      "retained": "data/raw/Training/pituitary/Tr-pi_246.jpg"
+    },
+    {
+      "removed": "data/raw/Training/pituitary/Tr-pi_984.jpg",
+      "retained": "data/raw/Training/pituitary/Tr-pi_1323.jpg"
+    },
+    {
+      "removed": "data/raw/Training/pituitary/Tr-pi_991.jpg",
+      "retained": "data/raw/Training/pituitary/Tr-pi_1023.jpg"
+    }
+  ],
+  "cross_split_perceptual_matches": [
+    [
+      "data/raw/Testing/meningioma/Te-me_272.jpg",
+      "data/raw/Training/meningioma/Tr-me_1127.jpg"
+    ],
+    [
+      "data/raw/Testing/meningioma/Te-me_125.jpg",
+      "data/raw/Training/meningioma/Tr-me_1282.jpg"
+    ],
+    [
+      "data/raw/Testing/meningioma/Te-me_7.jpg",
+      "data/raw/Training/meningioma/Tr-me_176.jpg"
+    ],
+    [
+      "data/raw/Training/meningioma/Tr-me_1298.jpg",
+      "data/raw/Training/meningioma/Tr-me_296.jpg"
+    ],
+    [
+      "data/raw/Testing/meningioma/Te-me_214.jpg",
+      "data/raw/Training/meningioma/Tr-me_464.jpg"
+    ],
+    [
+      "data/raw/Testing/meningioma/Te-me_262.jpg",
+      "data/raw/Training/meningioma/Tr-me_464.jpg"
+    ],
+    [
+      "data/raw/Testing/meningioma/Te-me_24.jpg",
+      "data/raw/Training/meningioma/Tr-me_546.jpg"
+    ],
+    [
+      "data/raw/Training/meningioma/Tr-aug-me_90.jpg",
+      "data/raw/Training/meningioma/Tr-me_647.jpg"
+    ],
+    [
+      "data/raw/Training/meningioma/Tr-me_1072.jpg",
+      "data/raw/Training/meningioma/Tr-me_647.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_126.jpg",
+      "data/raw/Training/notumor/Tr-no_10.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_93.jpg",
+      "data/raw/Training/notumor/Tr-no_10.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_332.jpg",
+      "data/raw/Training/notumor/Tr-no_1002.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_339.jpg",
+      "data/raw/Training/notumor/Tr-no_1008.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_363.jpg",
+      "data/raw/Training/notumor/Tr-no_1012.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_76.jpg",
+      "data/raw/Training/notumor/Tr-no_1012.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_146.jpg",
+      "data/raw/Training/notumor/Tr-no_1017.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_210.jpg",
+      "data/raw/Training/notumor/Tr-no_1017.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_83.jpg",
+      "data/raw/Training/notumor/Tr-no_1017.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_174.jpg",
+      "data/raw/Training/notumor/Tr-no_1022.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_113.jpg",
+      "data/raw/Training/notumor/Tr-no_1027.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_140.jpg",
+      "data/raw/Training/notumor/Tr-no_1027.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_189.jpg",
+      "data/raw/Training/notumor/Tr-no_1027.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_209.jpg",
+      "data/raw/Training/notumor/Tr-no_1027.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_260.jpg",
+      "data/raw/Training/notumor/Tr-no_1027.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_271.jpg",
+      "data/raw/Training/notumor/Tr-no_1027.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_275.jpg",
+      "data/raw/Training/notumor/Tr-no_1027.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_334.jpg",
+      "data/raw/Training/notumor/Tr-no_1027.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_351.jpg",
+      "data/raw/Training/notumor/Tr-no_1027.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_388.jpg",
+      "data/raw/Training/notumor/Tr-no_1027.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_276.jpg",
+      "data/raw/Training/notumor/Tr-no_1029.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_348.jpg",
+      "data/raw/Training/notumor/Tr-no_1034.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_371.jpg",
+      "data/raw/Training/notumor/Tr-no_1038.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_344.jpg",
+      "data/raw/Training/notumor/Tr-no_1039.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_394.jpg",
+      "data/raw/Training/notumor/Tr-no_1047.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_7.jpg",
+      "data/raw/Training/notumor/Tr-no_1047.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_180.jpg",
+      "data/raw/Training/notumor/Tr-no_1050.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_88.jpg",
+      "data/raw/Training/notumor/Tr-no_1050.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_168.jpg",
+      "data/raw/Training/notumor/Tr-no_1052.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_211.jpg",
+      "data/raw/Training/notumor/Tr-no_1052.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_235.jpg",
+      "data/raw/Training/notumor/Tr-no_1052.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_158.jpg",
+      "data/raw/Training/notumor/Tr-no_1053.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_171.jpg",
+      "data/raw/Training/notumor/Tr-no_1053.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_262.jpg",
+      "data/raw/Training/notumor/Tr-no_1053.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_397.jpg",
+      "data/raw/Training/notumor/Tr-no_1053.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_308.jpg",
+      "data/raw/Training/notumor/Tr-no_1057.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_113.jpg",
+      "data/raw/Training/notumor/Tr-no_1060.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_140.jpg",
+      "data/raw/Training/notumor/Tr-no_1060.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_189.jpg",
+      "data/raw/Training/notumor/Tr-no_1060.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_209.jpg",
+      "data/raw/Training/notumor/Tr-no_1060.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_260.jpg",
+      "data/raw/Training/notumor/Tr-no_1060.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_271.jpg",
+      "data/raw/Training/notumor/Tr-no_1060.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_275.jpg",
+      "data/raw/Training/notumor/Tr-no_1060.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_334.jpg",
+      "data/raw/Training/notumor/Tr-no_1060.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_351.jpg",
+      "data/raw/Training/notumor/Tr-no_1060.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_388.jpg",
+      "data/raw/Training/notumor/Tr-no_1060.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1027.jpg",
+      "data/raw/Training/notumor/Tr-no_1060.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_324.jpg",
+      "data/raw/Training/notumor/Tr-no_1061.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_113.jpg",
+      "data/raw/Training/notumor/Tr-no_1062.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_140.jpg",
+      "data/raw/Training/notumor/Tr-no_1062.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_189.jpg",
+      "data/raw/Training/notumor/Tr-no_1062.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_209.jpg",
+      "data/raw/Training/notumor/Tr-no_1062.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_260.jpg",
+      "data/raw/Training/notumor/Tr-no_1062.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_271.jpg",
+      "data/raw/Training/notumor/Tr-no_1062.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_275.jpg",
+      "data/raw/Training/notumor/Tr-no_1062.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_334.jpg",
+      "data/raw/Training/notumor/Tr-no_1062.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_351.jpg",
+      "data/raw/Training/notumor/Tr-no_1062.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_388.jpg",
+      "data/raw/Training/notumor/Tr-no_1062.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1027.jpg",
+      "data/raw/Training/notumor/Tr-no_1062.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_302.jpg",
+      "data/raw/Training/notumor/Tr-no_1064.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_379.jpg",
+      "data/raw/Training/notumor/Tr-no_1066.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1023.jpg",
+      "data/raw/Training/notumor/Tr-no_1068.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_113.jpg",
+      "data/raw/Training/notumor/Tr-no_1071.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_140.jpg",
+      "data/raw/Training/notumor/Tr-no_1071.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_189.jpg",
+      "data/raw/Training/notumor/Tr-no_1071.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_209.jpg",
+      "data/raw/Training/notumor/Tr-no_1071.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_260.jpg",
+      "data/raw/Training/notumor/Tr-no_1071.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_271.jpg",
+      "data/raw/Training/notumor/Tr-no_1071.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_275.jpg",
+      "data/raw/Training/notumor/Tr-no_1071.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_334.jpg",
+      "data/raw/Training/notumor/Tr-no_1071.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_351.jpg",
+      "data/raw/Training/notumor/Tr-no_1071.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_388.jpg",
+      "data/raw/Training/notumor/Tr-no_1071.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1027.jpg",
+      "data/raw/Training/notumor/Tr-no_1071.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_31.jpg",
+      "data/raw/Training/notumor/Tr-no_1075.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_296.jpg",
+      "data/raw/Training/notumor/Tr-no_1076.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_360.jpg",
+      "data/raw/Training/notumor/Tr-no_1076.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_394.jpg",
+      "data/raw/Training/notumor/Tr-no_108.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_7.jpg",
+      "data/raw/Training/notumor/Tr-no_108.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_201.jpg",
+      "data/raw/Training/notumor/Tr-no_1081.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_36.jpg",
+      "data/raw/Training/notumor/Tr-no_1081.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_324.jpg",
+      "data/raw/Training/notumor/Tr-no_1082.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_322.jpg",
+      "data/raw/Training/notumor/Tr-no_1083.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_35.jpg",
+      "data/raw/Training/notumor/Tr-no_1083.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_383.jpg",
+      "data/raw/Training/notumor/Tr-no_1083.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_61.jpg",
+      "data/raw/Training/notumor/Tr-no_1083.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_336.jpg",
+      "data/raw/Training/notumor/Tr-no_1084.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_163.jpg",
+      "data/raw/Training/notumor/Tr-no_1086.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_372.jpg",
+      "data/raw/Training/notumor/Tr-no_1086.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_391.jpg",
+      "data/raw/Training/notumor/Tr-no_1086.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_344.jpg",
+      "data/raw/Training/notumor/Tr-no_1091.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_24.jpg",
+      "data/raw/Training/notumor/Tr-no_11.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_396.jpg",
+      "data/raw/Training/notumor/Tr-no_11.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_113.jpg",
+      "data/raw/Training/notumor/Tr-no_1102.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_140.jpg",
+      "data/raw/Training/notumor/Tr-no_1102.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_189.jpg",
+      "data/raw/Training/notumor/Tr-no_1102.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_209.jpg",
+      "data/raw/Training/notumor/Tr-no_1102.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_260.jpg",
+      "data/raw/Training/notumor/Tr-no_1102.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_271.jpg",
+      "data/raw/Training/notumor/Tr-no_1102.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_275.jpg",
+      "data/raw/Training/notumor/Tr-no_1102.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_334.jpg",
+      "data/raw/Training/notumor/Tr-no_1102.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_351.jpg",
+      "data/raw/Training/notumor/Tr-no_1102.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_388.jpg",
+      "data/raw/Training/notumor/Tr-no_1102.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1027.jpg",
+      "data/raw/Training/notumor/Tr-no_1102.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_145.jpg",
+      "data/raw/Training/notumor/Tr-no_1108.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_120.jpg",
+      "data/raw/Training/notumor/Tr-no_1112.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_120.jpg",
+      "data/raw/Training/notumor/Tr-no_1113.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1112.jpg",
+      "data/raw/Training/notumor/Tr-no_1113.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_240.jpg",
+      "data/raw/Training/notumor/Tr-no_1116.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_82.jpg",
+      "data/raw/Training/notumor/Tr-no_1117.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_292.jpg",
+      "data/raw/Training/notumor/Tr-no_1122.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_87.jpg",
+      "data/raw/Training/notumor/Tr-no_1122.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_113.jpg",
+      "data/raw/Training/notumor/Tr-no_1124.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_140.jpg",
+      "data/raw/Training/notumor/Tr-no_1124.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_189.jpg",
+      "data/raw/Training/notumor/Tr-no_1124.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_209.jpg",
+      "data/raw/Training/notumor/Tr-no_1124.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_260.jpg",
+      "data/raw/Training/notumor/Tr-no_1124.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_271.jpg",
+      "data/raw/Training/notumor/Tr-no_1124.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_275.jpg",
+      "data/raw/Training/notumor/Tr-no_1124.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_334.jpg",
+      "data/raw/Training/notumor/Tr-no_1124.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_351.jpg",
+      "data/raw/Training/notumor/Tr-no_1124.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_388.jpg",
+      "data/raw/Training/notumor/Tr-no_1124.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1027.jpg",
+      "data/raw/Training/notumor/Tr-no_1124.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_14.jpg",
+      "data/raw/Training/notumor/Tr-no_1126.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_222.jpg",
+      "data/raw/Training/notumor/Tr-no_1126.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_284.jpg",
+      "data/raw/Training/notumor/Tr-no_1127.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_229.jpg",
+      "data/raw/Training/notumor/Tr-no_1128.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_232.jpg",
+      "data/raw/Training/notumor/Tr-no_113.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_369.jpg",
+      "data/raw/Training/notumor/Tr-no_113.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_62.jpg",
+      "data/raw/Training/notumor/Tr-no_113.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_277.jpg",
+      "data/raw/Training/notumor/Tr-no_1133.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_110.jpg",
+      "data/raw/Training/notumor/Tr-no_1136.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_190.jpg",
+      "data/raw/Training/notumor/Tr-no_1136.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_200.jpg",
+      "data/raw/Training/notumor/Tr-no_1136.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_342.jpg",
+      "data/raw/Training/notumor/Tr-no_1136.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_113.jpg",
+      "data/raw/Training/notumor/Tr-no_1138.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_140.jpg",
+      "data/raw/Training/notumor/Tr-no_1138.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_189.jpg",
+      "data/raw/Training/notumor/Tr-no_1138.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_209.jpg",
+      "data/raw/Training/notumor/Tr-no_1138.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_260.jpg",
+      "data/raw/Training/notumor/Tr-no_1138.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_271.jpg",
+      "data/raw/Training/notumor/Tr-no_1138.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_275.jpg",
+      "data/raw/Training/notumor/Tr-no_1138.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_334.jpg",
+      "data/raw/Training/notumor/Tr-no_1138.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_351.jpg",
+      "data/raw/Training/notumor/Tr-no_1138.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_388.jpg",
+      "data/raw/Training/notumor/Tr-no_1138.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1027.jpg",
+      "data/raw/Training/notumor/Tr-no_1138.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_311.jpg",
+      "data/raw/Training/notumor/Tr-no_114.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_8.jpg",
+      "data/raw/Training/notumor/Tr-no_1142.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_59.jpg",
+      "data/raw/Training/notumor/Tr-no_1144.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_371.jpg",
+      "data/raw/Training/notumor/Tr-no_1146.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_145.jpg",
+      "data/raw/Training/notumor/Tr-no_1150.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1108.jpg",
+      "data/raw/Training/notumor/Tr-no_1150.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_276.jpg",
+      "data/raw/Training/notumor/Tr-no_1151.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_144.jpg",
+      "data/raw/Training/notumor/Tr-no_1153.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_188.jpg",
+      "data/raw/Training/notumor/Tr-no_1155.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_257.jpg",
+      "data/raw/Training/notumor/Tr-no_1157.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_232.jpg",
+      "data/raw/Training/notumor/Tr-no_1163.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_369.jpg",
+      "data/raw/Training/notumor/Tr-no_1163.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_62.jpg",
+      "data/raw/Training/notumor/Tr-no_1163.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_113.jpg",
+      "data/raw/Training/notumor/Tr-no_1163.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_47.jpg",
+      "data/raw/Training/notumor/Tr-no_1165.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_142.jpg",
+      "data/raw/Training/notumor/Tr-no_1167.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_173.jpg",
+      "data/raw/Training/notumor/Tr-no_1167.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_228.jpg",
+      "data/raw/Training/notumor/Tr-no_117.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_322.jpg",
+      "data/raw/Training/notumor/Tr-no_1170.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_35.jpg",
+      "data/raw/Training/notumor/Tr-no_1170.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_383.jpg",
+      "data/raw/Training/notumor/Tr-no_1170.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_61.jpg",
+      "data/raw/Training/notumor/Tr-no_1170.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_21.jpg",
+      "data/raw/Training/notumor/Tr-no_1173.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_213.jpg",
+      "data/raw/Training/notumor/Tr-no_1173.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_337.jpg",
+      "data/raw/Training/notumor/Tr-no_1173.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_186.jpg",
+      "data/raw/Training/notumor/Tr-no_1174.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_107.jpg",
+      "data/raw/Training/notumor/Tr-no_1182.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_291.jpg",
+      "data/raw/Training/notumor/Tr-no_1185.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_253.jpg",
+      "data/raw/Training/notumor/Tr-no_119.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_292.jpg",
+      "data/raw/Training/notumor/Tr-no_1192.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_87.jpg",
+      "data/raw/Training/notumor/Tr-no_1192.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_129.jpg",
+      "data/raw/Training/notumor/Tr-no_1195.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_131.jpg",
+      "data/raw/Training/notumor/Tr-no_1195.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_378.jpg",
+      "data/raw/Training/notumor/Tr-no_1196.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_98.jpg",
+      "data/raw/Training/notumor/Tr-no_1196.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_139.jpg",
+      "data/raw/Training/notumor/Tr-no_1202.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_134.jpg",
+      "data/raw/Training/notumor/Tr-no_1203.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_58.jpg",
+      "data/raw/Training/notumor/Tr-no_1203.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_148.jpg",
+      "data/raw/Training/notumor/Tr-no_1204.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_48.jpg",
+      "data/raw/Training/notumor/Tr-no_122.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_322.jpg",
+      "data/raw/Training/notumor/Tr-no_1220.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_35.jpg",
+      "data/raw/Training/notumor/Tr-no_1220.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_383.jpg",
+      "data/raw/Training/notumor/Tr-no_1220.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_61.jpg",
+      "data/raw/Training/notumor/Tr-no_1220.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1083.jpg",
+      "data/raw/Training/notumor/Tr-no_1220.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1170.jpg",
+      "data/raw/Training/notumor/Tr-no_1220.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_163.jpg",
+      "data/raw/Training/notumor/Tr-no_1222.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_372.jpg",
+      "data/raw/Training/notumor/Tr-no_1222.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_391.jpg",
+      "data/raw/Training/notumor/Tr-no_1222.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_268.jpg",
+      "data/raw/Training/notumor/Tr-no_1225.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_123.jpg",
+      "data/raw/Training/notumor/Tr-no_1229.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_243.jpg",
+      "data/raw/Training/notumor/Tr-no_1230.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_129.jpg",
+      "data/raw/Training/notumor/Tr-no_1232.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_131.jpg",
+      "data/raw/Training/notumor/Tr-no_1232.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1195.jpg",
+      "data/raw/Training/notumor/Tr-no_1232.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_348.jpg",
+      "data/raw/Training/notumor/Tr-no_1233.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1034.jpg",
+      "data/raw/Training/notumor/Tr-no_1233.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_78.jpg",
+      "data/raw/Training/notumor/Tr-no_124.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_296.jpg",
+      "data/raw/Training/notumor/Tr-no_1241.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_360.jpg",
+      "data/raw/Training/notumor/Tr-no_1241.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1076.jpg",
+      "data/raw/Training/notumor/Tr-no_1241.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_322.jpg",
+      "data/raw/Training/notumor/Tr-no_1244.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_35.jpg",
+      "data/raw/Training/notumor/Tr-no_1244.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_383.jpg",
+      "data/raw/Training/notumor/Tr-no_1244.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_61.jpg",
+      "data/raw/Training/notumor/Tr-no_1244.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1220.jpg",
+      "data/raw/Training/notumor/Tr-no_1244.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_55.jpg",
+      "data/raw/Training/notumor/Tr-no_1246.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1068.jpg",
+      "data/raw/Training/notumor/Tr-no_1247.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_106.jpg",
+      "data/raw/Training/notumor/Tr-no_1249.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_394.jpg",
+      "data/raw/Training/notumor/Tr-no_1251.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_7.jpg",
+      "data/raw/Training/notumor/Tr-no_1251.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1047.jpg",
+      "data/raw/Training/notumor/Tr-no_1251.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_108.jpg",
+      "data/raw/Training/notumor/Tr-no_1251.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_113.jpg",
+      "data/raw/Training/notumor/Tr-no_1252.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_140.jpg",
+      "data/raw/Training/notumor/Tr-no_1252.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_189.jpg",
+      "data/raw/Training/notumor/Tr-no_1252.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_209.jpg",
+      "data/raw/Training/notumor/Tr-no_1252.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_260.jpg",
+      "data/raw/Training/notumor/Tr-no_1252.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_271.jpg",
+      "data/raw/Training/notumor/Tr-no_1252.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_275.jpg",
+      "data/raw/Training/notumor/Tr-no_1252.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_334.jpg",
+      "data/raw/Training/notumor/Tr-no_1252.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_351.jpg",
+      "data/raw/Training/notumor/Tr-no_1252.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_388.jpg",
+      "data/raw/Training/notumor/Tr-no_1252.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1027.jpg",
+      "data/raw/Training/notumor/Tr-no_1252.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1135.jpg",
+      "data/raw/Training/notumor/Tr-no_1255.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_46.jpg",
+      "data/raw/Training/notumor/Tr-no_1256.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_113.jpg",
+      "data/raw/Training/notumor/Tr-no_1257.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_140.jpg",
+      "data/raw/Training/notumor/Tr-no_1257.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_189.jpg",
+      "data/raw/Training/notumor/Tr-no_1257.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_209.jpg",
+      "data/raw/Training/notumor/Tr-no_1257.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_260.jpg",
+      "data/raw/Training/notumor/Tr-no_1257.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_271.jpg",
+      "data/raw/Training/notumor/Tr-no_1257.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_275.jpg",
+      "data/raw/Training/notumor/Tr-no_1257.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_334.jpg",
+      "data/raw/Training/notumor/Tr-no_1257.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_351.jpg",
+      "data/raw/Training/notumor/Tr-no_1257.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_388.jpg",
+      "data/raw/Training/notumor/Tr-no_1257.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1027.jpg",
+      "data/raw/Training/notumor/Tr-no_1257.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_237.jpg",
+      "data/raw/Training/notumor/Tr-no_1268.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_277.jpg",
+      "data/raw/Training/notumor/Tr-no_1272.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_12.jpg",
+      "data/raw/Training/notumor/Tr-no_1276.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_8.jpg",
+      "data/raw/Training/notumor/Tr-no_1277.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1142.jpg",
+      "data/raw/Training/notumor/Tr-no_1277.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_29.jpg",
+      "data/raw/Training/notumor/Tr-no_1279.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_352.jpg",
+      "data/raw/Training/notumor/Tr-no_1279.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_38.jpg",
+      "data/raw/Training/notumor/Tr-no_1279.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_269.jpg",
+      "data/raw/Training/notumor/Tr-no_1280.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_332.jpg",
+      "data/raw/Training/notumor/Tr-no_1281.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_243.jpg",
+      "data/raw/Training/notumor/Tr-no_1282.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_28.jpg",
+      "data/raw/Training/notumor/Tr-no_1284.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_399.jpg",
+      "data/raw/Training/notumor/Tr-no_1287.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_282.jpg",
+      "data/raw/Training/notumor/Tr-no_1294.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_326.jpg",
+      "data/raw/Training/notumor/Tr-no_1294.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_57.jpg",
+      "data/raw/Training/notumor/Tr-no_1294.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_164.jpg",
+      "data/raw/Training/notumor/Tr-no_1296.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_298.jpg",
+      "data/raw/Training/notumor/Tr-no_1296.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_319.jpg",
+      "data/raw/Training/notumor/Tr-no_1296.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_349.jpg",
+      "data/raw/Training/notumor/Tr-no_1296.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_66.jpg",
+      "data/raw/Training/notumor/Tr-no_1296.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_180.jpg",
+      "data/raw/Training/notumor/Tr-no_1297.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_88.jpg",
+      "data/raw/Training/notumor/Tr-no_1297.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_118.jpg",
+      "data/raw/Training/notumor/Tr-no_1299.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_44.jpg",
+      "data/raw/Training/notumor/Tr-no_1299.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_299.jpg",
+      "data/raw/Training/notumor/Tr-no_130.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_56.jpg",
+      "data/raw/Training/notumor/Tr-no_130.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_321.jpg",
+      "data/raw/Training/notumor/Tr-no_1301.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_86.jpg",
+      "data/raw/Training/notumor/Tr-no_1302.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_322.jpg",
+      "data/raw/Training/notumor/Tr-no_1304.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_35.jpg",
+      "data/raw/Training/notumor/Tr-no_1304.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_383.jpg",
+      "data/raw/Training/notumor/Tr-no_1304.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_61.jpg",
+      "data/raw/Training/notumor/Tr-no_1304.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1220.jpg",
+      "data/raw/Training/notumor/Tr-no_1304.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_332.jpg",
+      "data/raw/Training/notumor/Tr-no_1306.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_96.jpg",
+      "data/raw/Training/notumor/Tr-no_1310.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_157.jpg",
+      "data/raw/Training/notumor/Tr-no_1313.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_316.jpg",
+      "data/raw/Training/notumor/Tr-no_1314.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_125.jpg",
+      "data/raw/Training/notumor/Tr-no_1315.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_295.jpg",
+      "data/raw/Training/notumor/Tr-no_1316.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_375.jpg",
+      "data/raw/Training/notumor/Tr-no_1325.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_294.jpg",
+      "data/raw/Training/notumor/Tr-no_1328.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_318.jpg",
+      "data/raw/Training/notumor/Tr-no_1328.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_31.jpg",
+      "data/raw/Training/notumor/Tr-no_1330.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_156.jpg",
+      "data/raw/Training/notumor/Tr-no_1337.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_161.jpg",
+      "data/raw/Training/notumor/Tr-no_1338.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_329.jpg",
+      "data/raw/Training/notumor/Tr-no_1338.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_71.jpg",
+      "data/raw/Training/notumor/Tr-no_1338.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_162.jpg",
+      "data/raw/Training/notumor/Tr-no_1341.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_281.jpg",
+      "data/raw/Training/notumor/Tr-no_1346.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_281.jpg",
+      "data/raw/Training/notumor/Tr-no_1347.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1118.jpg",
+      "data/raw/Training/notumor/Tr-no_1349.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1224.jpg",
+      "data/raw/Training/notumor/Tr-no_1349.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1269.jpg",
+      "data/raw/Training/notumor/Tr-no_1353.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_161.jpg",
+      "data/raw/Training/notumor/Tr-no_1355.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_329.jpg",
+      "data/raw/Training/notumor/Tr-no_1355.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_71.jpg",
+      "data/raw/Training/notumor/Tr-no_1355.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_101.jpg",
+      "data/raw/Training/notumor/Tr-no_1356.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_185.jpg",
+      "data/raw/Training/notumor/Tr-no_1356.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_195.jpg",
+      "data/raw/Training/notumor/Tr-no_1356.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_303.jpg",
+      "data/raw/Training/notumor/Tr-no_1356.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_89.jpg",
+      "data/raw/Training/notumor/Tr-no_1356.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_218.jpg",
+      "data/raw/Training/notumor/Tr-no_1359.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_292.jpg",
+      "data/raw/Training/notumor/Tr-no_1361.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_87.jpg",
+      "data/raw/Training/notumor/Tr-no_1361.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1122.jpg",
+      "data/raw/Training/notumor/Tr-no_1361.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1192.jpg",
+      "data/raw/Training/notumor/Tr-no_1361.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_242.jpg",
+      "data/raw/Training/notumor/Tr-no_1364.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_266.jpg",
+      "data/raw/Training/notumor/Tr-no_1364.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_288.jpg",
+      "data/raw/Training/notumor/Tr-no_1367.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_69.jpg",
+      "data/raw/Training/notumor/Tr-no_1368.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_187.jpg",
+      "data/raw/Training/notumor/Tr-no_137.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_139.jpg",
+      "data/raw/Training/notumor/Tr-no_1370.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1202.jpg",
+      "data/raw/Training/notumor/Tr-no_1370.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_11.jpg",
+      "data/raw/Training/notumor/Tr-no_1371.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_322.jpg",
+      "data/raw/Training/notumor/Tr-no_1375.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_35.jpg",
+      "data/raw/Training/notumor/Tr-no_1375.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_383.jpg",
+      "data/raw/Training/notumor/Tr-no_1375.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_61.jpg",
+      "data/raw/Training/notumor/Tr-no_1375.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1220.jpg",
+      "data/raw/Training/notumor/Tr-no_1375.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_248.jpg",
+      "data/raw/Training/notumor/Tr-no_1381.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_49.jpg",
+      "data/raw/Training/notumor/Tr-no_1381.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_239.jpg",
+      "data/raw/Training/notumor/Tr-no_1387.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_312.jpg",
+      "data/raw/Training/notumor/Tr-no_1389.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_176.jpg",
+      "data/raw/Training/notumor/Tr-no_1396.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_387.jpg",
+      "data/raw/Training/notumor/Tr-no_1396.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_199.jpg",
+      "data/raw/Training/notumor/Tr-no_1399.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1125.jpg",
+      "data/raw/Training/notumor/Tr-no_141.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1300.jpg",
+      "data/raw/Training/notumor/Tr-no_142.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1303.jpg",
+      "data/raw/Training/notumor/Tr-no_142.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_129.jpg",
+      "data/raw/Training/notumor/Tr-no_145.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_131.jpg",
+      "data/raw/Training/notumor/Tr-no_145.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1195.jpg",
+      "data/raw/Training/notumor/Tr-no_145.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_219.jpg",
+      "data/raw/Training/notumor/Tr-no_146.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_149.jpg",
+      "data/raw/Training/notumor/Tr-no_148.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_217.jpg",
+      "data/raw/Training/notumor/Tr-no_148.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_30.jpg",
+      "data/raw/Training/notumor/Tr-no_148.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_232.jpg",
+      "data/raw/Training/notumor/Tr-no_152.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_369.jpg",
+      "data/raw/Training/notumor/Tr-no_152.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_62.jpg",
+      "data/raw/Training/notumor/Tr-no_152.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1163.jpg",
+      "data/raw/Training/notumor/Tr-no_152.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_245.jpg",
+      "data/raw/Training/notumor/Tr-no_158.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_296.jpg",
+      "data/raw/Training/notumor/Tr-no_16.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_360.jpg",
+      "data/raw/Training/notumor/Tr-no_16.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1241.jpg",
+      "data/raw/Training/notumor/Tr-no_16.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_307.jpg",
+      "data/raw/Training/notumor/Tr-no_160.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_113.jpg",
+      "data/raw/Training/notumor/Tr-no_169.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_140.jpg",
+      "data/raw/Training/notumor/Tr-no_169.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_189.jpg",
+      "data/raw/Training/notumor/Tr-no_169.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_209.jpg",
+      "data/raw/Training/notumor/Tr-no_169.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_260.jpg",
+      "data/raw/Training/notumor/Tr-no_169.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_271.jpg",
+      "data/raw/Training/notumor/Tr-no_169.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_275.jpg",
+      "data/raw/Training/notumor/Tr-no_169.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_334.jpg",
+      "data/raw/Training/notumor/Tr-no_169.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_351.jpg",
+      "data/raw/Training/notumor/Tr-no_169.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_388.jpg",
+      "data/raw/Training/notumor/Tr-no_169.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1027.jpg",
+      "data/raw/Training/notumor/Tr-no_169.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_258.jpg",
+      "data/raw/Training/notumor/Tr-no_175.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1068.jpg",
+      "data/raw/Training/notumor/Tr-no_176.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_111.jpg",
+      "data/raw/Training/notumor/Tr-no_177.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_361.jpg",
+      "data/raw/Training/notumor/Tr-no_177.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_80.jpg",
+      "data/raw/Training/notumor/Tr-no_177.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_175.jpg",
+      "data/raw/Training/notumor/Tr-no_182.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_327.jpg",
+      "data/raw/Training/notumor/Tr-no_182.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_163.jpg",
+      "data/raw/Training/notumor/Tr-no_184.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_372.jpg",
+      "data/raw/Training/notumor/Tr-no_184.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_391.jpg",
+      "data/raw/Training/notumor/Tr-no_184.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_339.jpg",
+      "data/raw/Training/notumor/Tr-no_187.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_238.jpg",
+      "data/raw/Training/notumor/Tr-no_188.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_24.jpg",
+      "data/raw/Training/notumor/Tr-no_19.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_396.jpg",
+      "data/raw/Training/notumor/Tr-no_19.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_8.jpg",
+      "data/raw/Training/notumor/Tr-no_194.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1142.jpg",
+      "data/raw/Training/notumor/Tr-no_194.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_120.jpg",
+      "data/raw/Training/notumor/Tr-no_200.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1113.jpg",
+      "data/raw/Training/notumor/Tr-no_200.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_290.jpg",
+      "data/raw/Training/notumor/Tr-no_201.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_214.jpg",
+      "data/raw/Training/notumor/Tr-no_202.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_113.jpg",
+      "data/raw/Training/notumor/Tr-no_203.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_140.jpg",
+      "data/raw/Training/notumor/Tr-no_203.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_189.jpg",
+      "data/raw/Training/notumor/Tr-no_203.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_209.jpg",
+      "data/raw/Training/notumor/Tr-no_203.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_260.jpg",
+      "data/raw/Training/notumor/Tr-no_203.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_271.jpg",
+      "data/raw/Training/notumor/Tr-no_203.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_275.jpg",
+      "data/raw/Training/notumor/Tr-no_203.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_334.jpg",
+      "data/raw/Training/notumor/Tr-no_203.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_351.jpg",
+      "data/raw/Training/notumor/Tr-no_203.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_388.jpg",
+      "data/raw/Training/notumor/Tr-no_203.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1027.jpg",
+      "data/raw/Training/notumor/Tr-no_203.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_116.jpg",
+      "data/raw/Training/notumor/Tr-no_207.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_113.jpg",
+      "data/raw/Training/notumor/Tr-no_21.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_140.jpg",
+      "data/raw/Training/notumor/Tr-no_21.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_189.jpg",
+      "data/raw/Training/notumor/Tr-no_21.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_209.jpg",
+      "data/raw/Training/notumor/Tr-no_21.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_260.jpg",
+      "data/raw/Training/notumor/Tr-no_21.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_271.jpg",
+      "data/raw/Training/notumor/Tr-no_21.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_275.jpg",
+      "data/raw/Training/notumor/Tr-no_21.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_334.jpg",
+      "data/raw/Training/notumor/Tr-no_21.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_351.jpg",
+      "data/raw/Training/notumor/Tr-no_21.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_388.jpg",
+      "data/raw/Training/notumor/Tr-no_21.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1027.jpg",
+      "data/raw/Training/notumor/Tr-no_21.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_158.jpg",
+      "data/raw/Training/notumor/Tr-no_213.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_171.jpg",
+      "data/raw/Training/notumor/Tr-no_213.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_262.jpg",
+      "data/raw/Training/notumor/Tr-no_213.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_397.jpg",
+      "data/raw/Training/notumor/Tr-no_213.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_127.jpg",
+      "data/raw/Training/notumor/Tr-no_223.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_357.jpg",
+      "data/raw/Training/notumor/Tr-no_223.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_113.jpg",
+      "data/raw/Training/notumor/Tr-no_224.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_140.jpg",
+      "data/raw/Training/notumor/Tr-no_224.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_189.jpg",
+      "data/raw/Training/notumor/Tr-no_224.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_209.jpg",
+      "data/raw/Training/notumor/Tr-no_224.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_260.jpg",
+      "data/raw/Training/notumor/Tr-no_224.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_271.jpg",
+      "data/raw/Training/notumor/Tr-no_224.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_275.jpg",
+      "data/raw/Training/notumor/Tr-no_224.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_334.jpg",
+      "data/raw/Training/notumor/Tr-no_224.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_351.jpg",
+      "data/raw/Training/notumor/Tr-no_224.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_388.jpg",
+      "data/raw/Training/notumor/Tr-no_224.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1027.jpg",
+      "data/raw/Training/notumor/Tr-no_224.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_4.jpg",
+      "data/raw/Training/notumor/Tr-no_23.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_4.jpg",
+      "data/raw/Training/notumor/Tr-no_234.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_119.jpg",
+      "data/raw/Training/notumor/Tr-no_236.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_206.jpg",
+      "data/raw/Training/notumor/Tr-no_236.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_198.jpg",
+      "data/raw/Training/notumor/Tr-no_24.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_90.jpg",
+      "data/raw/Training/notumor/Tr-no_24.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_113.jpg",
+      "data/raw/Training/notumor/Tr-no_241.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_140.jpg",
+      "data/raw/Training/notumor/Tr-no_241.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_189.jpg",
+      "data/raw/Training/notumor/Tr-no_241.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_209.jpg",
+      "data/raw/Training/notumor/Tr-no_241.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_260.jpg",
+      "data/raw/Training/notumor/Tr-no_241.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_271.jpg",
+      "data/raw/Training/notumor/Tr-no_241.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_275.jpg",
+      "data/raw/Training/notumor/Tr-no_241.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_334.jpg",
+      "data/raw/Training/notumor/Tr-no_241.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_351.jpg",
+      "data/raw/Training/notumor/Tr-no_241.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_388.jpg",
+      "data/raw/Training/notumor/Tr-no_241.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1027.jpg",
+      "data/raw/Training/notumor/Tr-no_241.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1190.jpg",
+      "data/raw/Training/notumor/Tr-no_243.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1099.jpg",
+      "data/raw/Training/notumor/Tr-no_245.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_13.jpg",
+      "data/raw/Training/notumor/Tr-no_245.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_41.jpg",
+      "data/raw/Training/notumor/Tr-no_246.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_113.jpg",
+      "data/raw/Training/notumor/Tr-no_249.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_140.jpg",
+      "data/raw/Training/notumor/Tr-no_249.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_189.jpg",
+      "data/raw/Training/notumor/Tr-no_249.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_209.jpg",
+      "data/raw/Training/notumor/Tr-no_249.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_260.jpg",
+      "data/raw/Training/notumor/Tr-no_249.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_271.jpg",
+      "data/raw/Training/notumor/Tr-no_249.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_275.jpg",
+      "data/raw/Training/notumor/Tr-no_249.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_334.jpg",
+      "data/raw/Training/notumor/Tr-no_249.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_351.jpg",
+      "data/raw/Training/notumor/Tr-no_249.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_388.jpg",
+      "data/raw/Training/notumor/Tr-no_249.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1060.jpg",
+      "data/raw/Training/notumor/Tr-no_249.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1062.jpg",
+      "data/raw/Training/notumor/Tr-no_249.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1071.jpg",
+      "data/raw/Training/notumor/Tr-no_249.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1102.jpg",
+      "data/raw/Training/notumor/Tr-no_249.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1124.jpg",
+      "data/raw/Training/notumor/Tr-no_249.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1138.jpg",
+      "data/raw/Training/notumor/Tr-no_249.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1252.jpg",
+      "data/raw/Training/notumor/Tr-no_249.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1257.jpg",
+      "data/raw/Training/notumor/Tr-no_249.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_169.jpg",
+      "data/raw/Training/notumor/Tr-no_249.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_203.jpg",
+      "data/raw/Training/notumor/Tr-no_249.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_21.jpg",
+      "data/raw/Training/notumor/Tr-no_249.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_224.jpg",
+      "data/raw/Training/notumor/Tr-no_249.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_241.jpg",
+      "data/raw/Training/notumor/Tr-no_249.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_113.jpg",
+      "data/raw/Training/notumor/Tr-no_251.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_140.jpg",
+      "data/raw/Training/notumor/Tr-no_251.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_189.jpg",
+      "data/raw/Training/notumor/Tr-no_251.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_209.jpg",
+      "data/raw/Training/notumor/Tr-no_251.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_260.jpg",
+      "data/raw/Training/notumor/Tr-no_251.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_271.jpg",
+      "data/raw/Training/notumor/Tr-no_251.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_275.jpg",
+      "data/raw/Training/notumor/Tr-no_251.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_334.jpg",
+      "data/raw/Training/notumor/Tr-no_251.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_351.jpg",
+      "data/raw/Training/notumor/Tr-no_251.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_388.jpg",
+      "data/raw/Training/notumor/Tr-no_251.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1027.jpg",
+      "data/raw/Training/notumor/Tr-no_251.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_249.jpg",
+      "data/raw/Training/notumor/Tr-no_251.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_2.jpg",
+      "data/raw/Training/notumor/Tr-no_252.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_317.jpg",
+      "data/raw/Training/notumor/Tr-no_252.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_276.jpg",
+      "data/raw/Training/notumor/Tr-no_253.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_158.jpg",
+      "data/raw/Training/notumor/Tr-no_254.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_171.jpg",
+      "data/raw/Training/notumor/Tr-no_254.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_262.jpg",
+      "data/raw/Training/notumor/Tr-no_254.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_397.jpg",
+      "data/raw/Training/notumor/Tr-no_254.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1055.jpg",
+      "data/raw/Training/notumor/Tr-no_260.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1227.jpg",
+      "data/raw/Training/notumor/Tr-no_260.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_269.jpg",
+      "data/raw/Training/notumor/Tr-no_264.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1280.jpg",
+      "data/raw/Training/notumor/Tr-no_264.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_113.jpg",
+      "data/raw/Training/notumor/Tr-no_265.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_140.jpg",
+      "data/raw/Training/notumor/Tr-no_265.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_189.jpg",
+      "data/raw/Training/notumor/Tr-no_265.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_209.jpg",
+      "data/raw/Training/notumor/Tr-no_265.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_260.jpg",
+      "data/raw/Training/notumor/Tr-no_265.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_271.jpg",
+      "data/raw/Training/notumor/Tr-no_265.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_275.jpg",
+      "data/raw/Training/notumor/Tr-no_265.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_334.jpg",
+      "data/raw/Training/notumor/Tr-no_265.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_351.jpg",
+      "data/raw/Training/notumor/Tr-no_265.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_388.jpg",
+      "data/raw/Training/notumor/Tr-no_265.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1027.jpg",
+      "data/raw/Training/notumor/Tr-no_265.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_249.jpg",
+      "data/raw/Training/notumor/Tr-no_265.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_113.jpg",
+      "data/raw/Training/notumor/Tr-no_267.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_140.jpg",
+      "data/raw/Training/notumor/Tr-no_267.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_189.jpg",
+      "data/raw/Training/notumor/Tr-no_267.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_209.jpg",
+      "data/raw/Training/notumor/Tr-no_267.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_260.jpg",
+      "data/raw/Training/notumor/Tr-no_267.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_271.jpg",
+      "data/raw/Training/notumor/Tr-no_267.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_275.jpg",
+      "data/raw/Training/notumor/Tr-no_267.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_334.jpg",
+      "data/raw/Training/notumor/Tr-no_267.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_351.jpg",
+      "data/raw/Training/notumor/Tr-no_267.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_388.jpg",
+      "data/raw/Training/notumor/Tr-no_267.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1060.jpg",
+      "data/raw/Training/notumor/Tr-no_267.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1062.jpg",
+      "data/raw/Training/notumor/Tr-no_267.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1071.jpg",
+      "data/raw/Training/notumor/Tr-no_267.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1102.jpg",
+      "data/raw/Training/notumor/Tr-no_267.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1124.jpg",
+      "data/raw/Training/notumor/Tr-no_267.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1138.jpg",
+      "data/raw/Training/notumor/Tr-no_267.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1252.jpg",
+      "data/raw/Training/notumor/Tr-no_267.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1257.jpg",
+      "data/raw/Training/notumor/Tr-no_267.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_169.jpg",
+      "data/raw/Training/notumor/Tr-no_267.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_203.jpg",
+      "data/raw/Training/notumor/Tr-no_267.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_21.jpg",
+      "data/raw/Training/notumor/Tr-no_267.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_224.jpg",
+      "data/raw/Training/notumor/Tr-no_267.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_241.jpg",
+      "data/raw/Training/notumor/Tr-no_267.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_251.jpg",
+      "data/raw/Training/notumor/Tr-no_267.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_265.jpg",
+      "data/raw/Training/notumor/Tr-no_267.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_97.jpg",
+      "data/raw/Training/notumor/Tr-no_27.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_125.jpg",
+      "data/raw/Training/notumor/Tr-no_270.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1315.jpg",
+      "data/raw/Training/notumor/Tr-no_270.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_180.jpg",
+      "data/raw/Training/notumor/Tr-no_272.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_88.jpg",
+      "data/raw/Training/notumor/Tr-no_272.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_245.jpg",
+      "data/raw/Training/notumor/Tr-no_278.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_158.jpg",
+      "data/raw/Training/notumor/Tr-no_278.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1045.jpg",
+      "data/raw/Training/notumor/Tr-no_284.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_59.jpg",
+      "data/raw/Training/notumor/Tr-no_287.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1068.jpg",
+      "data/raw/Training/notumor/Tr-no_288.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_204.jpg",
+      "data/raw/Training/notumor/Tr-no_290.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_50.jpg",
+      "data/raw/Training/notumor/Tr-no_290.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_81.jpg",
+      "data/raw/Training/notumor/Tr-no_291.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_259.jpg",
+      "data/raw/Training/notumor/Tr-no_294.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_260.jpg",
+      "data/raw/Training/notumor/Tr-no_296.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_295.jpg",
+      "data/raw/Training/notumor/Tr-no_297.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1212.jpg",
+      "data/raw/Training/notumor/Tr-no_303.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_236.jpg",
+      "data/raw/Training/notumor/Tr-no_306.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_345.jpg",
+      "data/raw/Training/notumor/Tr-no_306.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_15.jpg",
+      "data/raw/Training/notumor/Tr-no_309.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_305.jpg",
+      "data/raw/Training/notumor/Tr-no_309.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_37.jpg",
+      "data/raw/Training/notumor/Tr-no_311.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_166.jpg",
+      "data/raw/Training/notumor/Tr-no_314.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_172.jpg",
+      "data/raw/Training/notumor/Tr-no_318.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_238.jpg",
+      "data/raw/Training/notumor/Tr-no_319.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_188.jpg",
+      "data/raw/Training/notumor/Tr-no_319.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_290.jpg",
+      "data/raw/Training/notumor/Tr-no_32.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_201.jpg",
+      "data/raw/Training/notumor/Tr-no_32.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_128.jpg",
+      "data/raw/Training/notumor/Tr-no_320.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_256.jpg",
+      "data/raw/Training/notumor/Tr-no_320.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1023.jpg",
+      "data/raw/Training/notumor/Tr-no_321.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1247.jpg",
+      "data/raw/Training/notumor/Tr-no_321.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_176.jpg",
+      "data/raw/Training/notumor/Tr-no_321.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_288.jpg",
+      "data/raw/Training/notumor/Tr-no_321.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_113.jpg",
+      "data/raw/Training/notumor/Tr-no_322.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_140.jpg",
+      "data/raw/Training/notumor/Tr-no_322.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_189.jpg",
+      "data/raw/Training/notumor/Tr-no_322.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_209.jpg",
+      "data/raw/Training/notumor/Tr-no_322.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_260.jpg",
+      "data/raw/Training/notumor/Tr-no_322.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_271.jpg",
+      "data/raw/Training/notumor/Tr-no_322.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_275.jpg",
+      "data/raw/Training/notumor/Tr-no_322.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_334.jpg",
+      "data/raw/Training/notumor/Tr-no_322.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_351.jpg",
+      "data/raw/Training/notumor/Tr-no_322.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_388.jpg",
+      "data/raw/Training/notumor/Tr-no_322.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1027.jpg",
+      "data/raw/Training/notumor/Tr-no_322.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_249.jpg",
+      "data/raw/Training/notumor/Tr-no_322.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_267.jpg",
+      "data/raw/Training/notumor/Tr-no_322.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_194.jpg",
+      "data/raw/Training/notumor/Tr-no_325.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1160.jpg",
+      "data/raw/Training/notumor/Tr-no_327.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_232.jpg",
+      "data/raw/Training/notumor/Tr-no_331.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_369.jpg",
+      "data/raw/Training/notumor/Tr-no_331.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_62.jpg",
+      "data/raw/Training/notumor/Tr-no_331.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_113.jpg",
+      "data/raw/Training/notumor/Tr-no_331.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_152.jpg",
+      "data/raw/Training/notumor/Tr-no_331.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_24.jpg",
+      "data/raw/Training/notumor/Tr-no_334.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_396.jpg",
+      "data/raw/Training/notumor/Tr-no_334.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_11.jpg",
+      "data/raw/Training/notumor/Tr-no_334.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_19.jpg",
+      "data/raw/Training/notumor/Tr-no_334.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_55.jpg",
+      "data/raw/Training/notumor/Tr-no_337.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_113.jpg",
+      "data/raw/Training/notumor/Tr-no_339.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_140.jpg",
+      "data/raw/Training/notumor/Tr-no_339.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_189.jpg",
+      "data/raw/Training/notumor/Tr-no_339.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_209.jpg",
+      "data/raw/Training/notumor/Tr-no_339.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_260.jpg",
+      "data/raw/Training/notumor/Tr-no_339.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_271.jpg",
+      "data/raw/Training/notumor/Tr-no_339.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_275.jpg",
+      "data/raw/Training/notumor/Tr-no_339.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_334.jpg",
+      "data/raw/Training/notumor/Tr-no_339.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_351.jpg",
+      "data/raw/Training/notumor/Tr-no_339.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_388.jpg",
+      "data/raw/Training/notumor/Tr-no_339.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1027.jpg",
+      "data/raw/Training/notumor/Tr-no_339.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_249.jpg",
+      "data/raw/Training/notumor/Tr-no_339.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_267.jpg",
+      "data/raw/Training/notumor/Tr-no_339.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_240.jpg",
+      "data/raw/Training/notumor/Tr-no_342.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1116.jpg",
+      "data/raw/Training/notumor/Tr-no_342.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_173.jpg",
+      "data/raw/Training/notumor/Tr-no_344.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_330.jpg",
+      "data/raw/Training/notumor/Tr-no_345.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_134.jpg",
+      "data/raw/Training/notumor/Tr-no_347.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_58.jpg",
+      "data/raw/Training/notumor/Tr-no_347.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1203.jpg",
+      "data/raw/Training/notumor/Tr-no_347.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_118.jpg",
+      "data/raw/Training/notumor/Tr-no_35.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_44.jpg",
+      "data/raw/Training/notumor/Tr-no_35.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_113.jpg",
+      "data/raw/Training/notumor/Tr-no_351.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_140.jpg",
+      "data/raw/Training/notumor/Tr-no_351.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_189.jpg",
+      "data/raw/Training/notumor/Tr-no_351.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_209.jpg",
+      "data/raw/Training/notumor/Tr-no_351.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_260.jpg",
+      "data/raw/Training/notumor/Tr-no_351.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_271.jpg",
+      "data/raw/Training/notumor/Tr-no_351.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_275.jpg",
+      "data/raw/Training/notumor/Tr-no_351.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_334.jpg",
+      "data/raw/Training/notumor/Tr-no_351.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_351.jpg",
+      "data/raw/Training/notumor/Tr-no_351.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_388.jpg",
+      "data/raw/Training/notumor/Tr-no_351.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1027.jpg",
+      "data/raw/Training/notumor/Tr-no_351.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_249.jpg",
+      "data/raw/Training/notumor/Tr-no_351.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_267.jpg",
+      "data/raw/Training/notumor/Tr-no_351.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_162.jpg",
+      "data/raw/Training/notumor/Tr-no_352.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1341.jpg",
+      "data/raw/Training/notumor/Tr-no_352.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_18.jpg",
+      "data/raw/Training/notumor/Tr-no_357.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_245.jpg",
+      "data/raw/Training/notumor/Tr-no_359.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_158.jpg",
+      "data/raw/Training/notumor/Tr-no_359.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_178.jpg",
+      "data/raw/Training/notumor/Tr-no_36.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_179.jpg",
+      "data/raw/Training/notumor/Tr-no_364.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_325.jpg",
+      "data/raw/Training/notumor/Tr-no_364.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_134.jpg",
+      "data/raw/Training/notumor/Tr-no_365.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_58.jpg",
+      "data/raw/Training/notumor/Tr-no_365.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1203.jpg",
+      "data/raw/Training/notumor/Tr-no_365.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_287.jpg",
+      "data/raw/Training/notumor/Tr-no_367.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_2.jpg",
+      "data/raw/Training/notumor/Tr-no_368.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_317.jpg",
+      "data/raw/Training/notumor/Tr-no_368.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_162.jpg",
+      "data/raw/Training/notumor/Tr-no_369.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_352.jpg",
+      "data/raw/Training/notumor/Tr-no_369.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_322.jpg",
+      "data/raw/Training/notumor/Tr-no_37.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_35.jpg",
+      "data/raw/Training/notumor/Tr-no_37.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_383.jpg",
+      "data/raw/Training/notumor/Tr-no_37.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_61.jpg",
+      "data/raw/Training/notumor/Tr-no_37.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1220.jpg",
+      "data/raw/Training/notumor/Tr-no_37.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_126.jpg",
+      "data/raw/Training/notumor/Tr-no_377.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_93.jpg",
+      "data/raw/Training/notumor/Tr-no_377.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_231.jpg",
+      "data/raw/Training/notumor/Tr-no_379.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_208.jpg",
+      "data/raw/Training/notumor/Tr-no_382.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_8.jpg",
+      "data/raw/Training/notumor/Tr-no_385.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1277.jpg",
+      "data/raw/Training/notumor/Tr-no_385.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_194.jpg",
+      "data/raw/Training/notumor/Tr-no_385.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_134.jpg",
+      "data/raw/Training/notumor/Tr-no_386.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_58.jpg",
+      "data/raw/Training/notumor/Tr-no_386.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1203.jpg",
+      "data/raw/Training/notumor/Tr-no_386.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_214.jpg",
+      "data/raw/Training/notumor/Tr-no_388.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_194.jpg",
+      "data/raw/Training/notumor/Tr-no_389.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_325.jpg",
+      "data/raw/Training/notumor/Tr-no_389.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_186.jpg",
+      "data/raw/Training/notumor/Tr-no_390.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_94.jpg",
+      "data/raw/Training/notumor/Tr-no_391.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_384.jpg",
+      "data/raw/Training/notumor/Tr-no_392.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_6.jpg",
+      "data/raw/Training/notumor/Tr-no_392.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_25.jpg",
+      "data/raw/Training/notumor/Tr-no_394.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_25.jpg",
+      "data/raw/Training/notumor/Tr-no_395.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_29.jpg",
+      "data/raw/Training/notumor/Tr-no_397.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_352.jpg",
+      "data/raw/Training/notumor/Tr-no_397.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_38.jpg",
+      "data/raw/Training/notumor/Tr-no_397.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1199.jpg",
+      "data/raw/Training/notumor/Tr-no_398.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1054.jpg",
+      "data/raw/Training/notumor/Tr-no_399.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_159.jpg",
+      "data/raw/Training/notumor/Tr-no_399.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_14.jpg",
+      "data/raw/Training/notumor/Tr-no_4.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_222.jpg",
+      "data/raw/Training/notumor/Tr-no_4.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_11.jpg",
+      "data/raw/Training/notumor/Tr-no_402.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1371.jpg",
+      "data/raw/Training/notumor/Tr-no_402.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_184.jpg",
+      "data/raw/Training/notumor/Tr-no_403.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_283.jpg",
+      "data/raw/Training/notumor/Tr-no_403.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_119.jpg",
+      "data/raw/Training/notumor/Tr-no_409.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_206.jpg",
+      "data/raw/Training/notumor/Tr-no_409.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_59.jpg",
+      "data/raw/Training/notumor/Tr-no_41.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_171.jpg",
+      "data/raw/Training/notumor/Tr-no_415.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_371.jpg",
+      "data/raw/Training/notumor/Tr-no_422.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_243.jpg",
+      "data/raw/Training/notumor/Tr-no_425.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_212.jpg",
+      "data/raw/Training/notumor/Tr-no_429.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1162.jpg",
+      "data/raw/Training/notumor/Tr-no_43.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_245.jpg",
+      "data/raw/Training/notumor/Tr-no_435.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_278.jpg",
+      "data/raw/Training/notumor/Tr-no_435.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_359.jpg",
+      "data/raw/Training/notumor/Tr-no_435.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_120.jpg",
+      "data/raw/Training/notumor/Tr-no_437.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1112.jpg",
+      "data/raw/Training/notumor/Tr-no_437.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_200.jpg",
+      "data/raw/Training/notumor/Tr-no_437.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1089.jpg",
+      "data/raw/Training/notumor/Tr-no_438.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_323.jpg",
+      "data/raw/Training/notumor/Tr-no_438.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1218.jpg",
+      "data/raw/Training/notumor/Tr-no_439.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1349.jpg",
+      "data/raw/Training/notumor/Tr-no_443.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_215.jpg",
+      "data/raw/Training/notumor/Tr-no_446.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_24.jpg",
+      "data/raw/Training/notumor/Tr-no_447.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_396.jpg",
+      "data/raw/Training/notumor/Tr-no_447.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_334.jpg",
+      "data/raw/Training/notumor/Tr-no_447.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_13.jpg",
+      "data/raw/Training/notumor/Tr-no_449.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_260.jpg",
+      "data/raw/Training/notumor/Tr-no_453.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_108.jpg",
+      "data/raw/Training/notumor/Tr-no_458.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_113.jpg",
+      "data/raw/Training/notumor/Tr-no_46.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_140.jpg",
+      "data/raw/Training/notumor/Tr-no_46.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_189.jpg",
+      "data/raw/Training/notumor/Tr-no_46.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_209.jpg",
+      "data/raw/Training/notumor/Tr-no_46.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_260.jpg",
+      "data/raw/Training/notumor/Tr-no_46.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_271.jpg",
+      "data/raw/Training/notumor/Tr-no_46.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_275.jpg",
+      "data/raw/Training/notumor/Tr-no_46.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_334.jpg",
+      "data/raw/Training/notumor/Tr-no_46.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_351.jpg",
+      "data/raw/Training/notumor/Tr-no_46.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_388.jpg",
+      "data/raw/Training/notumor/Tr-no_46.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1027.jpg",
+      "data/raw/Training/notumor/Tr-no_46.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_249.jpg",
+      "data/raw/Training/notumor/Tr-no_46.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_267.jpg",
+      "data/raw/Training/notumor/Tr-no_46.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_364.jpg",
+      "data/raw/Training/notumor/Tr-no_460.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_245.jpg",
+      "data/raw/Training/notumor/Tr-no_465.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_254.jpg",
+      "data/raw/Training/notumor/Tr-no_468.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_25.jpg",
+      "data/raw/Training/notumor/Tr-no_469.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_85.jpg",
+      "data/raw/Training/notumor/Tr-no_469.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_198.jpg",
+      "data/raw/Training/notumor/Tr-no_470.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_90.jpg",
+      "data/raw/Training/notumor/Tr-no_470.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_120.jpg",
+      "data/raw/Training/notumor/Tr-no_473.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1112.jpg",
+      "data/raw/Training/notumor/Tr-no_473.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_200.jpg",
+      "data/raw/Training/notumor/Tr-no_473.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_423.jpg",
+      "data/raw/Training/notumor/Tr-no_474.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_125.jpg",
+      "data/raw/Training/notumor/Tr-no_476.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1315.jpg",
+      "data/raw/Training/notumor/Tr-no_476.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_110.jpg",
+      "data/raw/Training/notumor/Tr-no_480.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_190.jpg",
+      "data/raw/Training/notumor/Tr-no_480.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_200.jpg",
+      "data/raw/Training/notumor/Tr-no_480.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_342.jpg",
+      "data/raw/Training/notumor/Tr-no_480.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_11.jpg",
+      "data/raw/Training/notumor/Tr-no_488.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_402.jpg",
+      "data/raw/Training/notumor/Tr-no_488.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_316.jpg",
+      "data/raw/Training/notumor/Tr-no_49.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1314.jpg",
+      "data/raw/Training/notumor/Tr-no_49.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_152.jpg",
+      "data/raw/Training/notumor/Tr-no_495.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_296.jpg",
+      "data/raw/Training/notumor/Tr-no_497.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_360.jpg",
+      "data/raw/Training/notumor/Tr-no_497.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1076.jpg",
+      "data/raw/Training/notumor/Tr-no_497.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_16.jpg",
+      "data/raw/Training/notumor/Tr-no_497.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_265.jpg",
+      "data/raw/Training/notumor/Tr-no_498.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_24.jpg",
+      "data/raw/Training/notumor/Tr-no_499.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_396.jpg",
+      "data/raw/Training/notumor/Tr-no_499.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_334.jpg",
+      "data/raw/Training/notumor/Tr-no_499.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_242.jpg",
+      "data/raw/Training/notumor/Tr-no_50.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_266.jpg",
+      "data/raw/Training/notumor/Tr-no_50.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_182.jpg",
+      "data/raw/Training/notumor/Tr-no_500.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_216.jpg",
+      "data/raw/Training/notumor/Tr-no_500.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_250.jpg",
+      "data/raw/Training/notumor/Tr-no_501.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_12.jpg",
+      "data/raw/Training/notumor/Tr-no_504.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_339.jpg",
+      "data/raw/Training/notumor/Tr-no_508.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_266.jpg",
+      "data/raw/Training/notumor/Tr-no_512.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_53.jpg",
+      "data/raw/Training/notumor/Tr-no_513.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_322.jpg",
+      "data/raw/Training/notumor/Tr-no_514.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_35.jpg",
+      "data/raw/Training/notumor/Tr-no_514.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_383.jpg",
+      "data/raw/Training/notumor/Tr-no_514.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_61.jpg",
+      "data/raw/Training/notumor/Tr-no_514.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1220.jpg",
+      "data/raw/Training/notumor/Tr-no_514.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_139.jpg",
+      "data/raw/Training/notumor/Tr-no_521.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1202.jpg",
+      "data/raw/Training/notumor/Tr-no_521.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_55.jpg",
+      "data/raw/Training/notumor/Tr-no_528.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_296.jpg",
+      "data/raw/Training/notumor/Tr-no_529.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_360.jpg",
+      "data/raw/Training/notumor/Tr-no_529.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1241.jpg",
+      "data/raw/Training/notumor/Tr-no_529.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_497.jpg",
+      "data/raw/Training/notumor/Tr-no_529.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_70.jpg",
+      "data/raw/Training/notumor/Tr-no_530.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1023.jpg",
+      "data/raw/Training/notumor/Tr-no_536.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1247.jpg",
+      "data/raw/Training/notumor/Tr-no_536.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_176.jpg",
+      "data/raw/Training/notumor/Tr-no_536.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_288.jpg",
+      "data/raw/Training/notumor/Tr-no_536.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1051.jpg",
+      "data/raw/Training/notumor/Tr-no_538.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1162.jpg",
+      "data/raw/Training/notumor/Tr-no_541.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_385.jpg",
+      "data/raw/Training/notumor/Tr-no_544.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_146.jpg",
+      "data/raw/Training/notumor/Tr-no_548.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_210.jpg",
+      "data/raw/Training/notumor/Tr-no_548.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_83.jpg",
+      "data/raw/Training/notumor/Tr-no_548.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1017.jpg",
+      "data/raw/Training/notumor/Tr-no_548.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_155.jpg",
+      "data/raw/Training/notumor/Tr-no_549.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_32.jpg",
+      "data/raw/Training/notumor/Tr-no_549.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1231.jpg",
+      "data/raw/Training/notumor/Tr-no_55.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1023.jpg",
+      "data/raw/Training/notumor/Tr-no_552.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1247.jpg",
+      "data/raw/Training/notumor/Tr-no_552.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_176.jpg",
+      "data/raw/Training/notumor/Tr-no_552.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_288.jpg",
+      "data/raw/Training/notumor/Tr-no_552.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_294.jpg",
+      "data/raw/Training/notumor/Tr-no_554.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_318.jpg",
+      "data/raw/Training/notumor/Tr-no_554.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1328.jpg",
+      "data/raw/Training/notumor/Tr-no_554.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_188.jpg",
+      "data/raw/Training/notumor/Tr-no_556.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1218.jpg",
+      "data/raw/Training/notumor/Tr-no_557.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_243.jpg",
+      "data/raw/Training/notumor/Tr-no_558.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1230.jpg",
+      "data/raw/Training/notumor/Tr-no_558.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1282.jpg",
+      "data/raw/Training/notumor/Tr-no_558.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_425.jpg",
+      "data/raw/Training/notumor/Tr-no_558.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_322.jpg",
+      "data/raw/Training/notumor/Tr-no_559.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_35.jpg",
+      "data/raw/Training/notumor/Tr-no_559.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_383.jpg",
+      "data/raw/Training/notumor/Tr-no_559.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_61.jpg",
+      "data/raw/Training/notumor/Tr-no_559.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1083.jpg",
+      "data/raw/Training/notumor/Tr-no_559.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1170.jpg",
+      "data/raw/Training/notumor/Tr-no_559.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1244.jpg",
+      "data/raw/Training/notumor/Tr-no_559.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1304.jpg",
+      "data/raw/Training/notumor/Tr-no_559.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1375.jpg",
+      "data/raw/Training/notumor/Tr-no_559.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_37.jpg",
+      "data/raw/Training/notumor/Tr-no_559.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_514.jpg",
+      "data/raw/Training/notumor/Tr-no_559.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1023.jpg",
+      "data/raw/Training/notumor/Tr-no_56.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1247.jpg",
+      "data/raw/Training/notumor/Tr-no_56.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_176.jpg",
+      "data/raw/Training/notumor/Tr-no_56.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_288.jpg",
+      "data/raw/Training/notumor/Tr-no_56.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_197.jpg",
+      "data/raw/Training/notumor/Tr-no_561.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_353.jpg",
+      "data/raw/Training/notumor/Tr-no_561.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_356.jpg",
+      "data/raw/Training/notumor/Tr-no_563.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_384.jpg",
+      "data/raw/Training/notumor/Tr-no_566.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_6.jpg",
+      "data/raw/Training/notumor/Tr-no_566.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_267.jpg",
+      "data/raw/Training/notumor/Tr-no_570.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_385.jpg",
+      "data/raw/Training/notumor/Tr-no_571.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_544.jpg",
+      "data/raw/Training/notumor/Tr-no_571.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_178.jpg",
+      "data/raw/Training/notumor/Tr-no_573.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_36.jpg",
+      "data/raw/Training/notumor/Tr-no_573.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1162.jpg",
+      "data/raw/Training/notumor/Tr-no_575.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_139.jpg",
+      "data/raw/Training/notumor/Tr-no_583.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1202.jpg",
+      "data/raw/Training/notumor/Tr-no_583.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_127.jpg",
+      "data/raw/Training/notumor/Tr-no_585.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_357.jpg",
+      "data/raw/Training/notumor/Tr-no_585.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_223.jpg",
+      "data/raw/Training/notumor/Tr-no_585.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_2.jpg",
+      "data/raw/Training/notumor/Tr-no_586.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_260.jpg",
+      "data/raw/Training/notumor/Tr-no_588.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_232.jpg",
+      "data/raw/Training/notumor/Tr-no_595.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_369.jpg",
+      "data/raw/Training/notumor/Tr-no_595.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_62.jpg",
+      "data/raw/Training/notumor/Tr-no_595.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1163.jpg",
+      "data/raw/Training/notumor/Tr-no_595.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_331.jpg",
+      "data/raw/Training/notumor/Tr-no_595.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_392.jpg",
+      "data/raw/Training/notumor/Tr-no_597.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_371.jpg",
+      "data/raw/Training/notumor/Tr-no_603.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1038.jpg",
+      "data/raw/Training/notumor/Tr-no_603.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1146.jpg",
+      "data/raw/Training/notumor/Tr-no_603.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_422.jpg",
+      "data/raw/Training/notumor/Tr-no_603.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_82.jpg",
+      "data/raw/Training/notumor/Tr-no_604.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_143.jpg",
+      "data/raw/Training/notumor/Tr-no_609.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_281.jpg",
+      "data/raw/Training/notumor/Tr-no_61.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_113.jpg",
+      "data/raw/Training/notumor/Tr-no_611.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_140.jpg",
+      "data/raw/Training/notumor/Tr-no_611.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_189.jpg",
+      "data/raw/Training/notumor/Tr-no_611.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_209.jpg",
+      "data/raw/Training/notumor/Tr-no_611.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_260.jpg",
+      "data/raw/Training/notumor/Tr-no_611.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_271.jpg",
+      "data/raw/Training/notumor/Tr-no_611.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_275.jpg",
+      "data/raw/Training/notumor/Tr-no_611.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_334.jpg",
+      "data/raw/Training/notumor/Tr-no_611.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_351.jpg",
+      "data/raw/Training/notumor/Tr-no_611.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_388.jpg",
+      "data/raw/Training/notumor/Tr-no_611.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1027.jpg",
+      "data/raw/Training/notumor/Tr-no_611.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_249.jpg",
+      "data/raw/Training/notumor/Tr-no_611.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_267.jpg",
+      "data/raw/Training/notumor/Tr-no_611.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1068.jpg",
+      "data/raw/Training/notumor/Tr-no_612.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_321.jpg",
+      "data/raw/Training/notumor/Tr-no_612.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_536.jpg",
+      "data/raw/Training/notumor/Tr-no_612.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_552.jpg",
+      "data/raw/Training/notumor/Tr-no_612.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_56.jpg",
+      "data/raw/Training/notumor/Tr-no_612.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_39.jpg",
+      "data/raw/Training/notumor/Tr-no_614.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_273.jpg",
+      "data/raw/Training/notumor/Tr-no_618.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_322.jpg",
+      "data/raw/Training/notumor/Tr-no_620.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_35.jpg",
+      "data/raw/Training/notumor/Tr-no_620.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_383.jpg",
+      "data/raw/Training/notumor/Tr-no_620.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_61.jpg",
+      "data/raw/Training/notumor/Tr-no_620.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1220.jpg",
+      "data/raw/Training/notumor/Tr-no_620.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_559.jpg",
+      "data/raw/Training/notumor/Tr-no_620.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_146.jpg",
+      "data/raw/Training/notumor/Tr-no_621.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_210.jpg",
+      "data/raw/Training/notumor/Tr-no_621.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_83.jpg",
+      "data/raw/Training/notumor/Tr-no_621.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1017.jpg",
+      "data/raw/Training/notumor/Tr-no_621.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_163.jpg",
+      "data/raw/Training/notumor/Tr-no_622.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_372.jpg",
+      "data/raw/Training/notumor/Tr-no_622.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_391.jpg",
+      "data/raw/Training/notumor/Tr-no_622.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1390.jpg",
+      "data/raw/Training/notumor/Tr-no_625.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1211.jpg",
+      "data/raw/Training/notumor/Tr-no_626.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_161.jpg",
+      "data/raw/Training/notumor/Tr-no_628.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_329.jpg",
+      "data/raw/Training/notumor/Tr-no_628.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_71.jpg",
+      "data/raw/Training/notumor/Tr-no_628.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_257.jpg",
+      "data/raw/Training/notumor/Tr-no_631.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_95.jpg",
+      "data/raw/Training/notumor/Tr-no_635.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_339.jpg",
+      "data/raw/Training/notumor/Tr-no_637.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_4.jpg",
+      "data/raw/Training/notumor/Tr-no_643.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_385.jpg",
+      "data/raw/Training/notumor/Tr-no_644.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_571.jpg",
+      "data/raw/Training/notumor/Tr-no_644.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_201.jpg",
+      "data/raw/Training/notumor/Tr-no_645.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_36.jpg",
+      "data/raw/Training/notumor/Tr-no_645.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_441.jpg",
+      "data/raw/Training/notumor/Tr-no_646.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_627.jpg",
+      "data/raw/Training/notumor/Tr-no_646.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_592.jpg",
+      "data/raw/Training/notumor/Tr-no_65.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_24.jpg",
+      "data/raw/Training/notumor/Tr-no_651.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_396.jpg",
+      "data/raw/Training/notumor/Tr-no_651.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_11.jpg",
+      "data/raw/Training/notumor/Tr-no_651.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_19.jpg",
+      "data/raw/Training/notumor/Tr-no_651.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_447.jpg",
+      "data/raw/Training/notumor/Tr-no_651.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_499.jpg",
+      "data/raw/Training/notumor/Tr-no_651.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_8.jpg",
+      "data/raw/Training/notumor/Tr-no_652.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1277.jpg",
+      "data/raw/Training/notumor/Tr-no_652.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_194.jpg",
+      "data/raw/Training/notumor/Tr-no_652.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_245.jpg",
+      "data/raw/Training/notumor/Tr-no_655.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_278.jpg",
+      "data/raw/Training/notumor/Tr-no_655.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_359.jpg",
+      "data/raw/Training/notumor/Tr-no_655.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_316.jpg",
+      "data/raw/Training/notumor/Tr-no_656.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1068.jpg",
+      "data/raw/Training/notumor/Tr-no_657.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_321.jpg",
+      "data/raw/Training/notumor/Tr-no_657.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_536.jpg",
+      "data/raw/Training/notumor/Tr-no_657.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_552.jpg",
+      "data/raw/Training/notumor/Tr-no_657.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_56.jpg",
+      "data/raw/Training/notumor/Tr-no_657.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_45.jpg",
+      "data/raw/Training/notumor/Tr-no_659.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_118.jpg",
+      "data/raw/Training/notumor/Tr-no_66.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_44.jpg",
+      "data/raw/Training/notumor/Tr-no_66.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_333.jpg",
+      "data/raw/Training/notumor/Tr-no_663.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_74.jpg",
+      "data/raw/Training/notumor/Tr-no_665.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_314.jpg",
+      "data/raw/Training/notumor/Tr-no_666.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_96.jpg",
+      "data/raw/Training/notumor/Tr-no_667.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_47.jpg",
+      "data/raw/Training/notumor/Tr-no_67.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1250.jpg",
+      "data/raw/Training/notumor/Tr-no_673.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_163.jpg",
+      "data/raw/Training/notumor/Tr-no_675.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_372.jpg",
+      "data/raw/Training/notumor/Tr-no_675.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_391.jpg",
+      "data/raw/Training/notumor/Tr-no_675.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1086.jpg",
+      "data/raw/Training/notumor/Tr-no_675.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1222.jpg",
+      "data/raw/Training/notumor/Tr-no_675.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_184.jpg",
+      "data/raw/Training/notumor/Tr-no_675.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_622.jpg",
+      "data/raw/Training/notumor/Tr-no_675.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_393.jpg",
+      "data/raw/Training/notumor/Tr-no_678.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_107.jpg",
+      "data/raw/Training/notumor/Tr-no_68.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1182.jpg",
+      "data/raw/Training/notumor/Tr-no_68.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_178.jpg",
+      "data/raw/Training/notumor/Tr-no_680.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_573.jpg",
+      "data/raw/Training/notumor/Tr-no_680.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_134.jpg",
+      "data/raw/Training/notumor/Tr-no_681.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_301.jpg",
+      "data/raw/Training/notumor/Tr-no_681.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_464.jpg",
+      "data/raw/Training/notumor/Tr-no_681.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1353.jpg",
+      "data/raw/Training/notumor/Tr-no_682.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_228.jpg",
+      "data/raw/Training/notumor/Tr-no_687.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_117.jpg",
+      "data/raw/Training/notumor/Tr-no_687.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_511.jpg",
+      "data/raw/Training/notumor/Tr-no_689.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_278.jpg",
+      "data/raw/Training/notumor/Tr-no_690.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_338.jpg",
+      "data/raw/Training/notumor/Tr-no_690.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_14.jpg",
+      "data/raw/Training/notumor/Tr-no_694.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_222.jpg",
+      "data/raw/Training/notumor/Tr-no_694.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_295.jpg",
+      "data/raw/Training/notumor/Tr-no_701.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_336.jpg",
+      "data/raw/Training/notumor/Tr-no_704.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1084.jpg",
+      "data/raw/Training/notumor/Tr-no_704.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1226.jpg",
+      "data/raw/Training/notumor/Tr-no_707.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_43.jpg",
+      "data/raw/Training/notumor/Tr-no_708.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_541.jpg",
+      "data/raw/Training/notumor/Tr-no_708.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_575.jpg",
+      "data/raw/Training/notumor/Tr-no_708.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_113.jpg",
+      "data/raw/Training/notumor/Tr-no_709.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_140.jpg",
+      "data/raw/Training/notumor/Tr-no_709.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_189.jpg",
+      "data/raw/Training/notumor/Tr-no_709.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_209.jpg",
+      "data/raw/Training/notumor/Tr-no_709.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_260.jpg",
+      "data/raw/Training/notumor/Tr-no_709.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_271.jpg",
+      "data/raw/Training/notumor/Tr-no_709.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_275.jpg",
+      "data/raw/Training/notumor/Tr-no_709.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_334.jpg",
+      "data/raw/Training/notumor/Tr-no_709.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_351.jpg",
+      "data/raw/Training/notumor/Tr-no_709.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_388.jpg",
+      "data/raw/Training/notumor/Tr-no_709.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1027.jpg",
+      "data/raw/Training/notumor/Tr-no_709.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_249.jpg",
+      "data/raw/Training/notumor/Tr-no_709.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_267.jpg",
+      "data/raw/Training/notumor/Tr-no_709.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_344.jpg",
+      "data/raw/Training/notumor/Tr-no_715.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_24.jpg",
+      "data/raw/Training/notumor/Tr-no_716.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_396.jpg",
+      "data/raw/Training/notumor/Tr-no_716.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_334.jpg",
+      "data/raw/Training/notumor/Tr-no_716.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_651.jpg",
+      "data/raw/Training/notumor/Tr-no_716.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_82.jpg",
+      "data/raw/Training/notumor/Tr-no_717.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1190.jpg",
+      "data/raw/Training/notumor/Tr-no_718.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_290.jpg",
+      "data/raw/Training/notumor/Tr-no_72.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_201.jpg",
+      "data/raw/Training/notumor/Tr-no_72.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_145.jpg",
+      "data/raw/Training/notumor/Tr-no_721.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1150.jpg",
+      "data/raw/Training/notumor/Tr-no_721.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_390.jpg",
+      "data/raw/Training/notumor/Tr-no_722.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_220.jpg",
+      "data/raw/Training/notumor/Tr-no_730.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_502.jpg",
+      "data/raw/Training/notumor/Tr-no_736.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_188.jpg",
+      "data/raw/Training/notumor/Tr-no_739.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1155.jpg",
+      "data/raw/Training/notumor/Tr-no_739.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_556.jpg",
+      "data/raw/Training/notumor/Tr-no_739.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_322.jpg",
+      "data/raw/Training/notumor/Tr-no_74.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_35.jpg",
+      "data/raw/Training/notumor/Tr-no_74.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_383.jpg",
+      "data/raw/Training/notumor/Tr-no_74.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_61.jpg",
+      "data/raw/Training/notumor/Tr-no_74.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1220.jpg",
+      "data/raw/Training/notumor/Tr-no_74.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_559.jpg",
+      "data/raw/Training/notumor/Tr-no_74.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_243.jpg",
+      "data/raw/Training/notumor/Tr-no_740.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1230.jpg",
+      "data/raw/Training/notumor/Tr-no_740.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1282.jpg",
+      "data/raw/Training/notumor/Tr-no_740.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_425.jpg",
+      "data/raw/Training/notumor/Tr-no_740.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1184.jpg",
+      "data/raw/Training/notumor/Tr-no_741.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_163.jpg",
+      "data/raw/Training/notumor/Tr-no_744.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_372.jpg",
+      "data/raw/Training/notumor/Tr-no_744.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_391.jpg",
+      "data/raw/Training/notumor/Tr-no_744.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_675.jpg",
+      "data/raw/Training/notumor/Tr-no_744.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_281.jpg",
+      "data/raw/Training/notumor/Tr-no_748.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1346.jpg",
+      "data/raw/Training/notumor/Tr-no_748.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1347.jpg",
+      "data/raw/Training/notumor/Tr-no_748.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_61.jpg",
+      "data/raw/Training/notumor/Tr-no_748.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_145.jpg",
+      "data/raw/Training/notumor/Tr-no_751.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1150.jpg",
+      "data/raw/Training/notumor/Tr-no_751.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_170.jpg",
+      "data/raw/Training/notumor/Tr-no_759.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_207.jpg",
+      "data/raw/Training/notumor/Tr-no_759.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_236.jpg",
+      "data/raw/Training/notumor/Tr-no_761.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_345.jpg",
+      "data/raw/Training/notumor/Tr-no_761.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_302.jpg",
+      "data/raw/Training/notumor/Tr-no_762.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_289.jpg",
+      "data/raw/Training/notumor/Tr-no_768.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_350.jpg",
+      "data/raw/Training/notumor/Tr-no_768.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_175.jpg",
+      "data/raw/Training/notumor/Tr-no_771.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_327.jpg",
+      "data/raw/Training/notumor/Tr-no_771.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_198.jpg",
+      "data/raw/Training/notumor/Tr-no_772.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_90.jpg",
+      "data/raw/Training/notumor/Tr-no_772.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_289.jpg",
+      "data/raw/Training/notumor/Tr-no_775.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_350.jpg",
+      "data/raw/Training/notumor/Tr-no_775.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_768.jpg",
+      "data/raw/Training/notumor/Tr-no_775.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_296.jpg",
+      "data/raw/Training/notumor/Tr-no_780.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_360.jpg",
+      "data/raw/Training/notumor/Tr-no_780.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1241.jpg",
+      "data/raw/Training/notumor/Tr-no_780.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_497.jpg",
+      "data/raw/Training/notumor/Tr-no_780.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_174.jpg",
+      "data/raw/Training/notumor/Tr-no_785.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1018.jpg",
+      "data/raw/Training/notumor/Tr-no_789.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_262.jpg",
+      "data/raw/Training/notumor/Tr-no_789.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_120.jpg",
+      "data/raw/Training/notumor/Tr-no_791.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1112.jpg",
+      "data/raw/Training/notumor/Tr-no_791.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_200.jpg",
+      "data/raw/Training/notumor/Tr-no_791.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_219.jpg",
+      "data/raw/Training/notumor/Tr-no_793.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_72.jpg",
+      "data/raw/Training/notumor/Tr-no_794.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_260.jpg",
+      "data/raw/Training/notumor/Tr-no_795.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_180.jpg",
+      "data/raw/Training/notumor/Tr-no_797.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_88.jpg",
+      "data/raw/Training/notumor/Tr-no_797.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_242.jpg",
+      "data/raw/Training/notumor/Tr-no_799.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_266.jpg",
+      "data/raw/Training/notumor/Tr-no_799.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1364.jpg",
+      "data/raw/Training/notumor/Tr-no_799.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_50.jpg",
+      "data/raw/Training/notumor/Tr-no_799.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_48.jpg",
+      "data/raw/Training/notumor/Tr-no_80.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_122.jpg",
+      "data/raw/Training/notumor/Tr-no_80.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_116.jpg",
+      "data/raw/Training/notumor/Tr-no_802.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_207.jpg",
+      "data/raw/Training/notumor/Tr-no_802.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_231.jpg",
+      "data/raw/Training/notumor/Tr-no_804.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_332.jpg",
+      "data/raw/Training/notumor/Tr-no_805.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_142.jpg",
+      "data/raw/Training/notumor/Tr-no_807.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_173.jpg",
+      "data/raw/Training/notumor/Tr-no_807.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_43.jpg",
+      "data/raw/Training/notumor/Tr-no_808.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_114.jpg",
+      "data/raw/Training/notumor/Tr-no_811.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_303.jpg",
+      "data/raw/Training/notumor/Tr-no_818.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_113.jpg",
+      "data/raw/Training/notumor/Tr-no_82.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_140.jpg",
+      "data/raw/Training/notumor/Tr-no_82.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_189.jpg",
+      "data/raw/Training/notumor/Tr-no_82.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_209.jpg",
+      "data/raw/Training/notumor/Tr-no_82.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_260.jpg",
+      "data/raw/Training/notumor/Tr-no_82.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_271.jpg",
+      "data/raw/Training/notumor/Tr-no_82.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_275.jpg",
+      "data/raw/Training/notumor/Tr-no_82.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_334.jpg",
+      "data/raw/Training/notumor/Tr-no_82.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_351.jpg",
+      "data/raw/Training/notumor/Tr-no_82.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_388.jpg",
+      "data/raw/Training/notumor/Tr-no_82.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1060.jpg",
+      "data/raw/Training/notumor/Tr-no_82.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1062.jpg",
+      "data/raw/Training/notumor/Tr-no_82.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1071.jpg",
+      "data/raw/Training/notumor/Tr-no_82.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1102.jpg",
+      "data/raw/Training/notumor/Tr-no_82.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1124.jpg",
+      "data/raw/Training/notumor/Tr-no_82.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1138.jpg",
+      "data/raw/Training/notumor/Tr-no_82.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1252.jpg",
+      "data/raw/Training/notumor/Tr-no_82.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1257.jpg",
+      "data/raw/Training/notumor/Tr-no_82.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_169.jpg",
+      "data/raw/Training/notumor/Tr-no_82.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_203.jpg",
+      "data/raw/Training/notumor/Tr-no_82.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_21.jpg",
+      "data/raw/Training/notumor/Tr-no_82.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_224.jpg",
+      "data/raw/Training/notumor/Tr-no_82.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_241.jpg",
+      "data/raw/Training/notumor/Tr-no_82.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_251.jpg",
+      "data/raw/Training/notumor/Tr-no_82.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_265.jpg",
+      "data/raw/Training/notumor/Tr-no_82.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_322.jpg",
+      "data/raw/Training/notumor/Tr-no_82.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_339.jpg",
+      "data/raw/Training/notumor/Tr-no_82.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_351.jpg",
+      "data/raw/Training/notumor/Tr-no_82.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_46.jpg",
+      "data/raw/Training/notumor/Tr-no_82.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_611.jpg",
+      "data/raw/Training/notumor/Tr-no_82.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_709.jpg",
+      "data/raw/Training/notumor/Tr-no_82.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_86.jpg",
+      "data/raw/Training/notumor/Tr-no_821.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1302.jpg",
+      "data/raw/Training/notumor/Tr-no_821.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1386.jpg",
+      "data/raw/Training/notumor/Tr-no_823.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_307.jpg",
+      "data/raw/Training/notumor/Tr-no_83.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_160.jpg",
+      "data/raw/Training/notumor/Tr-no_83.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_164.jpg",
+      "data/raw/Training/notumor/Tr-no_835.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_298.jpg",
+      "data/raw/Training/notumor/Tr-no_835.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_319.jpg",
+      "data/raw/Training/notumor/Tr-no_835.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_349.jpg",
+      "data/raw/Training/notumor/Tr-no_835.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_66.jpg",
+      "data/raw/Training/notumor/Tr-no_835.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_214.jpg",
+      "data/raw/Training/notumor/Tr-no_837.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_202.jpg",
+      "data/raw/Training/notumor/Tr-no_837.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_388.jpg",
+      "data/raw/Training/notumor/Tr-no_837.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_179.jpg",
+      "data/raw/Training/notumor/Tr-no_845.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_325.jpg",
+      "data/raw/Training/notumor/Tr-no_845.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_362.jpg",
+      "data/raw/Training/notumor/Tr-no_848.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_385.jpg",
+      "data/raw/Training/notumor/Tr-no_849.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_571.jpg",
+      "data/raw/Training/notumor/Tr-no_849.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_321.jpg",
+      "data/raw/Training/notumor/Tr-no_851.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_175.jpg",
+      "data/raw/Training/notumor/Tr-no_852.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_327.jpg",
+      "data/raw/Training/notumor/Tr-no_852.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_324.jpg",
+      "data/raw/Training/notumor/Tr-no_855.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1061.jpg",
+      "data/raw/Training/notumor/Tr-no_855.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1082.jpg",
+      "data/raw/Training/notumor/Tr-no_855.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_245.jpg",
+      "data/raw/Training/notumor/Tr-no_861.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_295.jpg",
+      "data/raw/Training/notumor/Tr-no_867.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_103.jpg",
+      "data/raw/Training/notumor/Tr-no_868.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_384.jpg",
+      "data/raw/Training/notumor/Tr-no_868.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_347.jpg",
+      "data/raw/Training/notumor/Tr-no_87.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_231.jpg",
+      "data/raw/Training/notumor/Tr-no_870.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_322.jpg",
+      "data/raw/Training/notumor/Tr-no_873.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_35.jpg",
+      "data/raw/Training/notumor/Tr-no_873.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_383.jpg",
+      "data/raw/Training/notumor/Tr-no_873.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_61.jpg",
+      "data/raw/Training/notumor/Tr-no_873.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1083.jpg",
+      "data/raw/Training/notumor/Tr-no_873.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1170.jpg",
+      "data/raw/Training/notumor/Tr-no_873.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1244.jpg",
+      "data/raw/Training/notumor/Tr-no_873.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1304.jpg",
+      "data/raw/Training/notumor/Tr-no_873.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1375.jpg",
+      "data/raw/Training/notumor/Tr-no_873.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_37.jpg",
+      "data/raw/Training/notumor/Tr-no_873.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_514.jpg",
+      "data/raw/Training/notumor/Tr-no_873.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_620.jpg",
+      "data/raw/Training/notumor/Tr-no_873.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_74.jpg",
+      "data/raw/Training/notumor/Tr-no_873.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_242.jpg",
+      "data/raw/Training/notumor/Tr-no_876.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_266.jpg",
+      "data/raw/Training/notumor/Tr-no_876.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1364.jpg",
+      "data/raw/Training/notumor/Tr-no_876.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_50.jpg",
+      "data/raw/Training/notumor/Tr-no_876.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_646.jpg",
+      "data/raw/Training/notumor/Tr-no_877.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_14.jpg",
+      "data/raw/Training/notumor/Tr-no_878.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_222.jpg",
+      "data/raw/Training/notumor/Tr-no_878.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_253.jpg",
+      "data/raw/Training/notumor/Tr-no_88.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_158.jpg",
+      "data/raw/Training/notumor/Tr-no_883.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_171.jpg",
+      "data/raw/Training/notumor/Tr-no_883.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_262.jpg",
+      "data/raw/Training/notumor/Tr-no_883.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_397.jpg",
+      "data/raw/Training/notumor/Tr-no_883.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_509.jpg",
+      "data/raw/Training/notumor/Tr-no_884.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_111.jpg",
+      "data/raw/Training/notumor/Tr-no_888.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_361.jpg",
+      "data/raw/Training/notumor/Tr-no_888.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_80.jpg",
+      "data/raw/Training/notumor/Tr-no_888.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1078.jpg",
+      "data/raw/Training/notumor/Tr-no_89.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_314.jpg",
+      "data/raw/Training/notumor/Tr-no_890.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_666.jpg",
+      "data/raw/Training/notumor/Tr-no_890.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_147.jpg",
+      "data/raw/Training/notumor/Tr-no_892.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_395.jpg",
+      "data/raw/Training/notumor/Tr-no_892.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_27.jpg",
+      "data/raw/Training/notumor/Tr-no_896.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_64.jpg",
+      "data/raw/Training/notumor/Tr-no_896.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_97.jpg",
+      "data/raw/Training/notumor/Tr-no_898.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_27.jpg",
+      "data/raw/Training/notumor/Tr-no_898.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_292.jpg",
+      "data/raw/Training/notumor/Tr-no_902.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_87.jpg",
+      "data/raw/Training/notumor/Tr-no_902.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1361.jpg",
+      "data/raw/Training/notumor/Tr-no_902.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_8.jpg",
+      "data/raw/Training/notumor/Tr-no_904.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1277.jpg",
+      "data/raw/Training/notumor/Tr-no_904.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_194.jpg",
+      "data/raw/Training/notumor/Tr-no_904.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_415.jpg",
+      "data/raw/Training/notumor/Tr-no_908.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_376.jpg",
+      "data/raw/Training/notumor/Tr-no_91.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_47.jpg",
+      "data/raw/Training/notumor/Tr-no_910.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_178.jpg",
+      "data/raw/Training/notumor/Tr-no_914.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_573.jpg",
+      "data/raw/Training/notumor/Tr-no_914.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_25.jpg",
+      "data/raw/Training/notumor/Tr-no_922.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1041.jpg",
+      "data/raw/Training/notumor/Tr-no_924.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_55.jpg",
+      "data/raw/Training/notumor/Tr-no_928.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_228.jpg",
+      "data/raw/Training/notumor/Tr-no_929.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_687.jpg",
+      "data/raw/Training/notumor/Tr-no_929.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_163.jpg",
+      "data/raw/Training/notumor/Tr-no_936.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_372.jpg",
+      "data/raw/Training/notumor/Tr-no_936.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_391.jpg",
+      "data/raw/Training/notumor/Tr-no_936.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_675.jpg",
+      "data/raw/Training/notumor/Tr-no_936.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_3.jpg",
+      "data/raw/Training/notumor/Tr-no_937.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_381.jpg",
+      "data/raw/Training/notumor/Tr-no_937.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_113.jpg",
+      "data/raw/Training/notumor/Tr-no_938.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_140.jpg",
+      "data/raw/Training/notumor/Tr-no_938.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_189.jpg",
+      "data/raw/Training/notumor/Tr-no_938.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_209.jpg",
+      "data/raw/Training/notumor/Tr-no_938.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_260.jpg",
+      "data/raw/Training/notumor/Tr-no_938.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_271.jpg",
+      "data/raw/Training/notumor/Tr-no_938.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_275.jpg",
+      "data/raw/Training/notumor/Tr-no_938.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_334.jpg",
+      "data/raw/Training/notumor/Tr-no_938.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_351.jpg",
+      "data/raw/Training/notumor/Tr-no_938.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_388.jpg",
+      "data/raw/Training/notumor/Tr-no_938.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1027.jpg",
+      "data/raw/Training/notumor/Tr-no_938.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_249.jpg",
+      "data/raw/Training/notumor/Tr-no_938.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_267.jpg",
+      "data/raw/Training/notumor/Tr-no_938.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_82.jpg",
+      "data/raw/Training/notumor/Tr-no_938.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_109.jpg",
+      "data/raw/Training/notumor/Tr-no_939.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_335.jpg",
+      "data/raw/Training/notumor/Tr-no_943.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_378.jpg",
+      "data/raw/Training/notumor/Tr-no_944.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_613.jpg",
+      "data/raw/Training/notumor/Tr-no_944.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_756.jpg",
+      "data/raw/Training/notumor/Tr-no_944.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_176.jpg",
+      "data/raw/Training/notumor/Tr-no_947.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_387.jpg",
+      "data/raw/Training/notumor/Tr-no_947.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_238.jpg",
+      "data/raw/Training/notumor/Tr-no_950.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_319.jpg",
+      "data/raw/Training/notumor/Tr-no_950.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_770.jpg",
+      "data/raw/Training/notumor/Tr-no_951.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_798.jpg",
+      "data/raw/Training/notumor/Tr-no_951.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_130.jpg",
+      "data/raw/Training/notumor/Tr-no_952.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_322.jpg",
+      "data/raw/Training/notumor/Tr-no_955.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_35.jpg",
+      "data/raw/Training/notumor/Tr-no_955.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_383.jpg",
+      "data/raw/Training/notumor/Tr-no_955.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_61.jpg",
+      "data/raw/Training/notumor/Tr-no_955.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1220.jpg",
+      "data/raw/Training/notumor/Tr-no_955.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_559.jpg",
+      "data/raw/Training/notumor/Tr-no_955.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_873.jpg",
+      "data/raw/Training/notumor/Tr-no_955.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_221.jpg",
+      "data/raw/Training/notumor/Tr-no_958.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_205.jpg",
+      "data/raw/Training/notumor/Tr-no_96.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_293.jpg",
+      "data/raw/Training/notumor/Tr-no_968.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_358.jpg",
+      "data/raw/Training/notumor/Tr-no_97.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_154.jpg",
+      "data/raw/Training/notumor/Tr-no_971.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_385.jpg",
+      "data/raw/Training/notumor/Tr-no_973.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_544.jpg",
+      "data/raw/Training/notumor/Tr-no_973.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_644.jpg",
+      "data/raw/Training/notumor/Tr-no_973.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_849.jpg",
+      "data/raw/Training/notumor/Tr-no_973.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_308.jpg",
+      "data/raw/Training/notumor/Tr-no_974.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_909.jpg",
+      "data/raw/Training/notumor/Tr-no_975.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_741.jpg",
+      "data/raw/Training/notumor/Tr-no_976.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_174.jpg",
+      "data/raw/Training/notumor/Tr-no_981.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_295.jpg",
+      "data/raw/Training/notumor/Tr-no_984.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_1316.jpg",
+      "data/raw/Training/notumor/Tr-no_984.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_297.jpg",
+      "data/raw/Training/notumor/Tr-no_984.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_701.jpg",
+      "data/raw/Training/notumor/Tr-no_984.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_867.jpg",
+      "data/raw/Training/notumor/Tr-no_984.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_24.jpg",
+      "data/raw/Training/notumor/Tr-no_986.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_396.jpg",
+      "data/raw/Training/notumor/Tr-no_986.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_334.jpg",
+      "data/raw/Training/notumor/Tr-no_986.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_651.jpg",
+      "data/raw/Training/notumor/Tr-no_986.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_78.jpg",
+      "data/raw/Training/notumor/Tr-no_987.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_241.jpg",
+      "data/raw/Training/notumor/Tr-no_99.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_141.jpg",
+      "data/raw/Training/notumor/Tr-no_993.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_336.jpg",
+      "data/raw/Training/notumor/Tr-no_994.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_704.jpg",
+      "data/raw/Training/notumor/Tr-no_994.jpg"
+    ],
+    [
+      "data/raw/Testing/notumor/Te-no_53.jpg",
+      "data/raw/Training/notumor/Tr-no_996.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_140.jpg",
+      "data/raw/Training/notumor/Tr-no_997.jpg"
+    ],
+    [
+      "data/raw/Training/notumor/Tr-no_646.jpg",
+      "data/raw/Training/notumor/Tr-no_999.jpg"
+    ],
+    [
+      "data/raw/Training/pituitary/Tr-pi_1068.jpg",
+      "data/raw/Training/pituitary/Tr-pi_1079.jpg"
+    ],
+    [
+      "data/raw/Testing/pituitary/Te-pi_352.jpg",
+      "data/raw/Training/pituitary/Tr-pi_1104.jpg"
+    ],
+    [
+      "data/raw/Training/pituitary/Tr-pi_1003.jpg",
+      "data/raw/Training/pituitary/Tr-pi_363.jpg"
+    ],
+    [
+      "data/raw/Training/pituitary/Tr-pi_1252.jpg",
+      "data/raw/Training/pituitary/Tr-pi_396.jpg"
+    ],
+    [
+      "data/raw/Training/pituitary/Tr-pi_279.jpg",
+      "data/raw/Training/pituitary/Tr-pi_40.jpg"
+    ],
+    [
+      "data/raw/Training/pituitary/Tr-pi_1383.jpg",
+      "data/raw/Training/pituitary/Tr-pi_519.jpg"
+    ],
+    [
+      "data/raw/Training/pituitary/Tr-pi_247.jpg",
+      "data/raw/Training/pituitary/Tr-pi_802.jpg"
+    ],
+    [
+      "data/raw/Testing/pituitary/Te-pi_203.jpg",
+      "data/raw/Training/pituitary/Tr-pi_938.jpg"
+    ]
+  ],
+  "patient_identifiers_available": false,
+  "limitation": "Image-level split; perceptual matching cannot prove patient independence",
+  "fingerprint": "41cb9ab4695842741a36f58a3970c05f647d2533e888ae7ff461e5fcbafb7ce4",
+  "seed": 42
+}

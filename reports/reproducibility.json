@@ -1,0 +1,48 @@
+{
+  "cases": [
+    {
+      "case": "mlflow-project-main-completed",
+      "passed": true,
+      "run_id": "6ebb5449dbeb47068d08ffba5081b1f7",
+      "command": "mlflow run . --env-manager local"
+    },
+    {
+      "case": "pinned-python-runtime",
+      "passed": true,
+      "actual": "3.11.16"
+    },
+    {
+      "case": "all-declared-dependency-versions-match",
+      "passed": true,
+      "packages_checked": 167
+    },
+    {
+      "case": "automatic-local-ci-hook-executed",
+      "passed": true,
+      "hook": ".githooks/pre-commit"
+    },
+    {
+      "case": "fresh-checkout-dvc-pull-clean",
+      "passed": true,
+      "source_commit": "3137cb1f44753f4326a12bf351e5ac0a374c6994"
+    },
+    {
+      "case": "fresh-checkout-model-load-and-predict",
+      "passed": true,
+      "version": "6d3f391a229a464fb61d805da5fa66d3"
+    },
+    {
+      "case": "fresh-checkout-complete-splits",
+      "passed": true,
+      "actual_counts": {
+        "train": 4239,
+        "val": 1060,
+        "test": 1579
+      }
+    },
+    {
+      "case": "complete-ci-script-executed",
+      "passed": true
+    }
+  ]
+}

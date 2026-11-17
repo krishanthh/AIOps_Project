@@ -1,0 +1,49 @@
+stages:
+  check:
+    cmd: sh scripts/ci.sh --checks-only
+    deps: [brainai, tests, scripts, pyproject.toml, requirements-lock.txt]
+    outs:
+      - reports/code-checks.json:
+          cache: false
+  acquire:
+    cmd: python -m brainai.data acquire
+    deps: [brainai/data.py, params.yaml]
+    outs: [data/raw, data/source.json]
+  split:
+    cmd: python -m brainai.data split
+    deps: [brainai/data.py, brainai/common.py, data/raw]
+    params: [data.seed, data.validation_fraction]
+    outs: [data/splits.json]
+    metrics:
+      - reports/data-quality.json:
+          cache: false
+  prepare:
+    cmd: python -m brainai.data prepare
+    deps: [brainai/data.py, brainai/common.py, data/splits.json, data/raw]
+    params: [data.image_size, data.ray_workers]
+    outs: [data/processed]
+    metrics:
+      - reports/preparation.json:
+          cache: false
+  train:
+    cmd: python -m brainai.train
+    deps: [brainai/train.py, brainai/model.py, brainai/common.py, reports/code-checks.json, data/processed, data/splits.json, data/source.json, reports/data-quality.json]
+    params: [train, data.seed]
+    outs: [artifacts/checkpoint.pt, artifacts/manifest.json]
+    metrics:
+      - reports/experiments.json:
+          cache: false
+  evaluate:
+    cmd: python -m brainai.evaluate evaluate
+    deps: [brainai/evaluate.py, brainai/train.py, brainai/model.py, artifacts/checkpoint.pt, artifacts/manifest.json, data/processed]
+    metrics:
+      - reports/evaluation.json:
+          cache: false
+    outs: [reports/confusion-matrix.png]
+  package:
+    cmd: python -m brainai.evaluate package
+    deps: [brainai/evaluate.py, brainai/model.py, brainai/common.py, artifacts/checkpoint.pt, artifacts/manifest.json, data/processed, reports/evaluation.json]
+    outs: [artifacts/model]
+    metrics:
+      - reports/packaging.json:
+          cache: false

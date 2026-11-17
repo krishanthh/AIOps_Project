@@ -1,0 +1,9 @@
+{
+  "engine": "Ray",
+  "workers": 2,
+  "processed": 6878,
+  "seconds": 30.62522600698867,
+  "images_per_second": 224.58609769705674,
+  "baseline_brightness_mean": 0.1807706468261992,
+  "baseline_brightness_std": 0.06576371195327457
+}

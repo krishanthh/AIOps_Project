@@ -1,0 +1,163 @@
+{
+  "cases": [
+    {
+      "case": "all-prometheus-targets-up",
+      "passed": true,
+      "detail": {
+        "backend": "up",
+        "frontend": "up",
+        "grafana": "up",
+        "prometheus": "up",
+        "serving": "up"
+      }
+    },
+    {
+      "case": "real-prediction-counter",
+      "passed": true,
+      "detail": [
+        {
+          "metric": {},
+          "value": [
+            1794696316.892,
+            "22"
+          ]
+        }
+      ]
+    },
+    {
+      "case": "ray-throughput-visible",
+      "passed": true,
+      "detail": [
+        {
+          "metric": {
+            "__name__": "brainai_preparation_images_per_second",
+            "instance": "backend:8000",
+            "job": "backend"
+          },
+          "value": [
+            1794696316.893,
+            "224.58609769705674"
+          ]
+        }
+      ]
+    },
+    {
+      "case": "pipeline-duration-visible",
+      "passed": true,
+      "detail": [
+        {
+          "metric": {},
+          "value": [
+            1794696316.894,
+            "34.422633895039326"
+          ]
+        }
+      ]
+    },
+    {
+      "case": "tracking-service-monitored",
+      "passed": true,
+      "detail": [
+        {
+          "metric": {
+            "__name__": "brainai_tracking_available",
+            "instance": "backend:8000",
+            "job": "backend"
+          },
+          "value": [
+            1794696316.896,
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "case": "frontend-exporter-counter",
+      "passed": true,
+      "detail": [
+        {
+          "metric": {
+            "__name__": "nginx_http_requests_total",
+            "instance": "frontend-exporter:9113",
+            "job": "frontend"
+          },
+          "value": [
+            1794696316.897,
+            "138"
+          ]
+        }
+      ]
+    },
+    {
+      "case": "alert-rules-loaded-and-evaluated",
+      "passed": true,
+      "detail": [
+        {
+          "name": "ModelUnavailable",
+          "health": "ok",
+          "state": "inactive"
+        },
+        {
+          "name": "BackendDown",
+          "health": "ok",
+          "state": "inactive"
+        },
+        {
+          "name": "SlowPrediction",
+          "health": "ok",
+          "state": "inactive"
+        },
+        {
+          "name": "ImageDistributionShift",
+          "health": "ok",
+          "state": "inactive"
+        },
+        {
+          "name": "TrackingUnavailable",
+          "health": "ok",
+          "state": "inactive"
+        }
+      ]
+    },
+    {
+      "case": "grafana-prometheus-datasource-healthy",
+      "passed": true,
+      "detail": {
+        "details": {
+          "application": "Prometheus",
+          "features": {
+            "rulerApiEnabled": false
+          }
+        },
+        "message": "Successfully queried the Prometheus API.",
+        "status": "OK"
+      }
+    },
+    {
+      "case": "grafana-dashboard-provisioned",
+      "passed": true,
+      "detail": {
+        "title": "BrainScope \u00b7 Local AIOps",
+        "panels": 13
+      }
+    },
+    {
+      "case": "grafana-queries-real-prediction-data",
+      "passed": true,
+      "detail": [
+        {
+          "metric": {},
+          "value": [
+            1794696317.13,
+            "22"
+          ]
+        }
+      ]
+    },
+    {
+      "case": "promtool-alert-logic-tests",
+      "passed": true,
+      "detail": "promtool rule tests with controlled input series"
+    }
+  ]
+}

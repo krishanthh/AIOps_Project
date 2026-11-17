@@ -1,0 +1,66 @@
+{
+  "dataset": {
+    "dataset": "masoudnickparvar/brain-tumor-mri-dataset",
+    "source_url": "https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset",
+    "archive_sha256": "882817250048c78ef7a759cf23e540d7b581f2327b16663c9d3db12f5d2ffdb4",
+    "downloaded_at_unix": 1794694913.4750383,
+    "license": "CC BY 4.0 (publisher metadata snapshot in reports/dataset-metadata.json)",
+    "version": "Identified by immutable downloaded archive SHA256"
+  },
+  "cases": [
+    {
+      "case": "real-serving-readiness",
+      "passed": true
+    },
+    {
+      "case": "compose-prediction-explain-False",
+      "passed": true,
+      "seconds": 0.24019654098083265,
+      "version": "6d3f391a229a464fb61d805da5fa66d3"
+    },
+    {
+      "case": "compose-prediction-explain-True",
+      "passed": true,
+      "seconds": 0.13084843498654664,
+      "version": "6d3f391a229a464fb61d805da5fa66d3"
+    },
+    {
+      "case": "mlflow-signature-rejects-invalid-input",
+      "passed": true
+    },
+    {
+      "case": "compose-rejects-invalid-upload",
+      "passed": true
+    },
+    {
+      "case": "pixel-limit-4000x4000",
+      "passed": true,
+      "status": 200
+    },
+    {
+      "case": "pixel-limit-4001x4000",
+      "passed": true,
+      "status": 422
+    },
+    {
+      "case": "real-prediction-instrumented",
+      "passed": true
+    },
+    {
+      "case": "built-frontend-and-rest-proxy",
+      "passed": true
+    },
+    {
+      "case": "real-artifact-reload-prediction-parity",
+      "passed": true
+    },
+    {
+      "case": "prediction-latency-under-ten-seconds",
+      "passed": true,
+      "maximum_seconds": 0.24019654098083265
+    }
+  ],
+  "model_version": "6d3f391a229a464fb61d805da5fa66d3",
+  "latency_target_seconds": 10,
+  "note": "Executed through Nginx, FastAPI and MLflow in actual Compose containers"
+}

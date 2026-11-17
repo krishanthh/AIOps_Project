@@ -1,0 +1,93 @@
+{
+  "cases": [
+    {
+      "case": "seven-separate-compose-services",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "declared-healthchecks-pass",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "all-project-services-memory-capped",
+      "passed": true,
+      "detail": {
+        "backend": 402653184,
+        "frontend": 67108864,
+        "frontend-exporter": 33554432,
+        "grafana": 402653184,
+        "mlflow": 536870912,
+        "prometheus": 201326592,
+        "serving": 805306368
+      }
+    },
+    {
+      "case": "no-service-oom-events",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "deployed-source-matches-submission",
+      "passed": true,
+      "detail": {
+        "files_checked": 9
+      }
+    },
+    {
+      "case": "openapi-endpoints-available",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "selected-version-served",
+      "passed": true,
+      "detail": "6d3f391a229a464fb61d805da5fa66d3"
+    },
+    {
+      "case": "rollback-serves-prior-version",
+      "passed": true,
+      "detail": "e77b65cb9bb149d2ae24d0d9fc0bc16c"
+    },
+    {
+      "case": "restore-current-version",
+      "passed": true,
+      "detail": "6d3f391a229a464fb61d805da5fa66d3"
+    },
+    {
+      "case": "model-outage-keeps-api-live-but-unready",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "model-outage-instrumented",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "model-outage-recovered",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "pipeline-evidence-survives-api-recreation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "case": "monitoring-traffic-generated",
+      "passed": true,
+      "detail": {
+        "successful_requests": 22
+      }
+    },
+    {
+      "case": "final-image-startup-and-four-class-traffic",
+      "passed": true,
+      "requests": 32,
+      "version": "6d3f391a229a464fb61d805da5fa66d3"
+    }
+  ],
+  "model_version": "6d3f391a229a464fb61d805da5fa66d3"
+}

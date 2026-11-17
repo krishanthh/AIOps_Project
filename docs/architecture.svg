@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1380" viewBox="0 0 1440 1380" role="img" aria-labelledby="title description">
+<title id="title">BrainScope application and AIOps architecture</title>
+<desc id="description">Three separate sections show the online request path, reproducible model lifecycle, and monitoring. Solid arrows show requests or artifact transfer; dashed arrows show experiment logging and monitoring queries.</desc>
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#36796d"/></marker>
+  <marker id="muted-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#738a9b"/></marker>
+  <style>
+    text{font-family:Arial,Helvetica,sans-serif;fill:#203e38}
+    .title{font-size:34px;font-weight:700;letter-spacing:-.6px}
+    .subtitle{font-size:16px;fill:#71867e}
+    .section{font-size:21px;font-weight:700}
+    .eyebrow{font-size:12px;letter-spacing:1.5px;font-weight:700;fill:#578173}
+    .node-title{font-size:20px;font-weight:700}
+    .body{font-size:15px;fill:#60786f}
+    .caption{font-size:13px;fill:#637b71}
+    .link-label{font-size:12px;fill:#436f62}
+    .panel{fill:white;stroke:#d8e5df;stroke-width:1.4}
+    .node{fill:#f2f8f5;stroke:#b8d3c6;stroke-width:1.4}
+    .operational{fill:#f3f6fa;stroke:#c2cfdf;stroke-width:1.4}
+    .solid{fill:none;stroke:#36796d;stroke-width:2;marker-end:url(#arrow);stroke-linejoin:round}
+    .dashed{fill:none;stroke:#738a9b;stroke-width:1.8;stroke-dasharray:6 5;marker-end:url(#muted-arrow)}
+  </style>
+</defs>
+<rect width="1440" height="1380" fill="#f5f8f6"/>
+
+<text x="48" y="59" class="title" text-anchor="start">BrainScope</text>
+<text x="48" y="88" class="subtitle" text-anchor="start">Brain tumour classification · Local application and AIOps architecture</text>
+<text x="1392" y="54" class="subtitle" text-anchor="end">Krishanthh Mohan</text>
+<text x="1392" y="80" class="caption" text-anchor="end">DA24B044 · DA3408</text>
+<path d="M 52 121 H 94" class="solid"/>
+<text x="108" y="126" class="caption" text-anchor="start">Request / artifact transfer</text>
+<path d="M 340 121 H 382" class="dashed"/>
+<text x="396" y="126" class="caption" text-anchor="start">Tracking / monitoring</text>
+<text x="1392" y="126" class="caption" text-anchor="end">Logical architecture · runtime checks reported separately</text>
+<rect x="48" y="158" width="1344" height="265" rx="16" class="panel"/>
+<text x="80" y="195" class="eyebrow" text-anchor="start">01  ONLINE APPLICATION</text>
+<text x="80" y="226" class="section" text-anchor="start">From an uploaded image to a visual explanation</text>
+<rect x="80" y="260" width="340" height="130" rx="12" class="node"/>
+<text x="102" y="294" class="node-title" text-anchor="start">React + Nginx</text>
+<text x="102" y="323" class="body" text-anchor="start">MRI upload and image preview</text>
+<text x="102" y="346" class="body" text-anchor="start">Results, pipeline and evaluation pages</text>
+<text x="102" y="369" class="body" text-anchor="start">Browser interface on localhost:3100</text>
+<rect x="550" y="260" width="340" height="130" rx="12" class="node"/>
+<text x="572" y="294" class="node-title" text-anchor="start">FastAPI</text>
+<text x="572" y="323" class="body" text-anchor="start">Validate uploads and handle errors</text>
+<text x="572" y="346" class="body" text-anchor="start">Call the model over configurable HTTP</text>
+<text x="572" y="369" class="body" text-anchor="start">Return probabilities and explanations</text>
+<rect x="1020" y="260" width="340" height="130" rx="12" class="node"/>
+<text x="1042" y="294" class="node-title" text-anchor="start">MLflow serving</text>
+<text x="1042" y="323" class="body" text-anchor="start">Packaged preprocessing + PyTorch</text>
+<text x="1042" y="346" class="body" text-anchor="start">MobileNetV3 Small · four classes</text>
+<text x="1042" y="369" class="body" text-anchor="start">Grad-CAM inside the model process</text>
+<path d="M 420 322 H 548" class="solid"/>
+<text x="485" y="307" class="link-label" text-anchor="middle">REST API</text>
+<path d="M 890 322 H 1018" class="solid"/>
+<text x="955" y="307" class="link-label" text-anchor="middle">/invocations</text>
+<text x="80" y="410" class="caption" text-anchor="start">Responses return through the same interfaces. The frontend does not load model files.</text>
+<rect x="48" y="490" width="1344" height="407" rx="16" class="panel"/>
+<text x="80" y="528" class="eyebrow" text-anchor="start">02  REPRODUCIBLE MODEL LIFECYCLE</text>
+<text x="80" y="559" class="section" text-anchor="start">DVC runs the stages and reuses unchanged outputs</text>
+<text x="1300" y="559" class="caption" text-anchor="end">Local CPU training</text>
+<rect x="80" y="590" width="260" height="130" rx="12" class="node"/>
+<text x="102" y="624" class="node-title" text-anchor="start">Ingest + validate</text>
+<text x="102" y="653" class="body" text-anchor="start">Pinned MRI dataset archive</text>
+<text x="102" y="676" class="body" text-anchor="start">Checksums and duplicate audit</text>
+<text x="102" y="699" class="body" text-anchor="start">Seeded train / validation split</text>
+<rect x="400" y="590" width="260" height="130" rx="12" class="node"/>
+<text x="422" y="624" class="node-title" text-anchor="start">Ray preparation</text>
+<text x="422" y="653" class="body" text-anchor="start">Decode and resize images</text>
+<text x="422" y="676" class="body" text-anchor="start">Two local workers</text>
+<text x="422" y="699" class="body" text-anchor="start">Record speed and throughput</text>
+<rect x="720" y="590" width="260" height="130" rx="12" class="node"/>
+<text x="742" y="624" class="node-title" text-anchor="start">Train + select</text>
+<text x="742" y="653" class="body" text-anchor="start">Frozen-backbone CPU training</text>
+<text x="742" y="676" class="body" text-anchor="start">Compare two learning rates</text>
+<text x="742" y="699" class="body" text-anchor="start">Select by validation macro-F1</text>
+<rect x="1040" y="590" width="260" height="130" rx="12" class="node"/>
+<text x="1062" y="624" class="node-title" text-anchor="start">Evaluate + package</text>
+<text x="1062" y="653" class="body" text-anchor="start">Held-out test evaluation</text>
+<text x="1062" y="676" class="body" text-anchor="start">MLflow signature and artifact</text>
+<text x="1062" y="699" class="body" text-anchor="start">Save a version for serving</text>
+<path d="M 340 650 H 398" class="solid"/>
+<path d="M 660 650 H 718" class="solid"/>
+<path d="M 980 650 H 1038" class="solid"/>
+<path d="M 850 720 V 777" class="dashed"/>
+<text x="870" y="753" class="link-label" text-anchor="start">Experiment logs</text>
+<rect x="720" y="779" width="580" height="87" rx="12" class="operational"/>
+<text x="742" y="813" class="node-title" text-anchor="start">MLflow tracking</text>
+<text x="742" y="842" class="body" text-anchor="start">Parameters, epoch metrics, run IDs, evaluation and explanation artifacts</text>
+<rect x="80" y="779" width="580" height="87" rx="12" class="operational"/>
+<text x="102" y="811" class="node-title" text-anchor="start">Git + DVC + pinned environments</text>
+<text x="102" y="840" class="body" text-anchor="start">Code/data/model versions · CI test gate · MLflow Project · Docker</text>
+<path d="M 1300 640 H 1373 V 458 H 1190 V 392" class="solid"/>
+<text x="1280" y="446" class="link-label" text-anchor="middle">Selected model artifact</text>
+<rect x="48" y="936" width="1344" height="346" rx="16" class="panel"/>
+<text x="80" y="974" class="eyebrow" text-anchor="start">03  OBSERVABILITY</text>
+<text x="80" y="1005" class="section" text-anchor="start">Actual application measurements, collected and visualized locally</text>
+<rect x="80" y="1046" width="340" height="130" rx="12" class="operational"/>
+<text x="102" y="1080" class="node-title" text-anchor="start">Application exporters</text>
+<text x="102" y="1109" class="body" text-anchor="start">FastAPI metrics</text>
+<text x="102" y="1132" class="body" text-anchor="start">Serving-process metrics</text>
+<text x="102" y="1155" class="body" text-anchor="start">Nginx frontend exporter</text>
+<rect x="550" y="1046" width="340" height="130" rx="12" class="operational"/>
+<text x="572" y="1080" class="node-title" text-anchor="start">Prometheus</text>
+<text x="572" y="1109" class="body" text-anchor="start">Scrape metrics at regular intervals</text>
+<text x="572" y="1132" class="body" text-anchor="start">Request rates, latency and availability</text>
+<text x="572" y="1155" class="body" text-anchor="start">Evaluate local alert rules</text>
+<rect x="1020" y="1046" width="340" height="130" rx="12" class="operational"/>
+<text x="1042" y="1080" class="node-title" text-anchor="start">Grafana</text>
+<text x="1042" y="1109" class="body" text-anchor="start">Query the Prometheus datasource</text>
+<text x="1042" y="1132" class="body" text-anchor="start">Provisioned monitoring dashboard</text>
+<text x="1042" y="1155" class="body" text-anchor="start">Inspect trends during the demo</text>
+<path d="M 550 1111 H 422" class="dashed"/>
+<text x="485" y="1096" class="link-label" text-anchor="middle">Scrapes /metrics</text>
+<path d="M 1020 1111 H 892" class="dashed"/>
+<text x="955" y="1096" class="link-label" text-anchor="middle">PromQL queries</text>
+<text x="80" y="1212" class="caption" text-anchor="start">The API also exposes pipeline status, duration and Ray throughput through its metrics endpoint.</text>
+<text x="80" y="1238" class="caption" text-anchor="start">Prometheus additionally scrapes itself and Grafana. Brightness drift is a limited input-distribution check.</text>
+<text x="80" y="1261" class="caption" text-anchor="start">Training runs separately from the serving stack when machine memory is limited.</text>
+<text x="48" y="1321" class="subtitle" text-anchor="start">Deployment: separate local Docker Compose services</text>
+<text x="48" y="1348" class="caption" text-anchor="start">Model updates: choose a saved artifact in .env, then recreate the serving container.</text>
+<text x="1392" y="1348" class="caption" text-anchor="end">Educational research application</text>
+</svg>

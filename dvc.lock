@@ -1,0 +1,256 @@
+schema: '2.0'
+stages:
+  acquire:
+    cmd: python -m brainai.data acquire
+    deps:
+    - path: brainai/data.py
+      hash: md5
+      md5: 10a7fb2deb210bcc94818d31cce19820
+      size: 8407
+    - path: params.yaml
+      hash: md5
+      md5: 3acfd1bf978e962be78491c573c1653f
+      size: 445
+    outs:
+    - path: data/raw
+      hash: md5
+      md5: 98739965edb8be83d3627dcf926b5d74.dir
+      size: 167848957
+      nfiles: 7200
+    - path: data/source.json
+      hash: md5
+      md5: fbc2ddc5c655004666db302616f87257
+      size: 438
+  split:
+    cmd: python -m brainai.data split
+    deps:
+    - path: brainai/common.py
+      hash: md5
+      md5: d5cbb6817218895a039d0ec7637c953f
+      size: 2007
+    - path: brainai/data.py
+      hash: md5
+      md5: 10a7fb2deb210bcc94818d31cce19820
+      size: 8407
+    - path: data/raw
+      hash: md5
+      md5: 98739965edb8be83d3627dcf926b5d74.dir
+      size: 167848957
+      nfiles: 7200
+    params:
+      params.yaml:
+        data.seed: 42
+        data.validation_fraction: 0.2
+    outs:
+    - path: data/splits.json
+      hash: md5
+      md5: e1bc19fd98d3ed8d974fe26f250632f6
+      size: 2151158
+    - path: reports/data-quality.json
+      hash: md5
+      md5: 6b69de6eb906dee874b1c99db676bcca
+      size: 179424
+  prepare:
+    cmd: python -m brainai.data prepare
+    deps:
+    - path: brainai/common.py
+      hash: md5
+      md5: d5cbb6817218895a039d0ec7637c953f
+      size: 2007
+    - path: brainai/data.py
+      hash: md5
+      md5: 10a7fb2deb210bcc94818d31cce19820
+      size: 8407
+    - path: data/raw
+      hash: md5
+      md5: 98739965edb8be83d3627dcf926b5d74.dir
+      size: 167848957
+      nfiles: 7200
+    - path: data/splits.json
+      hash: md5
+      md5: e1bc19fd98d3ed8d974fe26f250632f6
+      size: 2151158
+    params:
+      params.yaml:
+        data.image_size: 224
+        data.ray_workers: 2
+    outs:
+    - path: data/processed
+      hash: md5
+      md5: 1c31b84b054bae3dd12592bca44dc3aa.dir
+      size: 110285630
+      nfiles: 6878
+    - path: reports/preparation.json
+      hash: md5
+      md5: c18a22f0f9a912bcb4115c700ffd1b30
+      size: 233
+  train:
+    cmd: python -m brainai.train
+    deps:
+    - path: brainai/common.py
+      hash: md5
+      md5: d5cbb6817218895a039d0ec7637c953f
+      size: 2007
+    - path: brainai/model.py
+      hash: md5
+      md5: 4f327905c26755429e393df226bb38f9
+      size: 4390
+    - path: brainai/train.py
+      hash: md5
+      md5: b2ae1a42a3688e758f2590e0e32cf4c8
+      size: 6908
+    - path: data/processed
+      hash: md5
+      md5: 1c31b84b054bae3dd12592bca44dc3aa.dir
+      size: 110285630
+      nfiles: 6878
+    - path: data/source.json
+      hash: md5
+      md5: fbc2ddc5c655004666db302616f87257
+      size: 438
+    - path: data/splits.json
+      hash: md5
+      md5: e1bc19fd98d3ed8d974fe26f250632f6
+      size: 2151158
+    - path: reports/code-checks.json
+      hash: md5
+      md5: 5aa8d2cf44fa7384b855e8b1f0f9d33f
+      size: 81
+    - path: reports/data-quality.json
+      hash: md5
+      md5: 6b69de6eb906dee874b1c99db676bcca
+      size: 179424
+    params:
+      params.yaml:
+        data.seed: 42
+        train:
+          batch_size: 8
+          epochs: 5
+          learning_rates:
+          - 0.001
+          - 0.0003
+          fine_tune_epochs: 0
+          promotion_macro_f1: 0.85
+    outs:
+    - path: artifacts/checkpoint.pt
+      hash: md5
+      md5: f713fd402b72a29a6782c15d8affc72a
+      size: 6219269
+    - path: artifacts/manifest.json
+      hash: md5
+      md5: db77c81724ccbf04d3130c33470ec0bc
+      size: 892
+    - path: reports/experiments.json
+      hash: md5
+      md5: fc69c88fa3431f28f204ded8ea7dd2c9
+      size: 339
+  evaluate:
+    cmd: python -m brainai.evaluate evaluate
+    deps:
+    - path: artifacts/checkpoint.pt
+      hash: md5
+      md5: f713fd402b72a29a6782c15d8affc72a
+      size: 6219269
+    - path: artifacts/manifest.json
+      hash: md5
+      md5: db77c81724ccbf04d3130c33470ec0bc
+      size: 892
+    - path: brainai/evaluate.py
+      hash: md5
+      md5: 1146018144e036b4c1cd217d9ac15ba2
+      size: 3879
+    - path: brainai/model.py
+      hash: md5
+      md5: 4f327905c26755429e393df226bb38f9
+      size: 4390
+    - path: brainai/train.py
+      hash: md5
+      md5: b2ae1a42a3688e758f2590e0e32cf4c8
+      size: 6908
+    - path: data/processed
+      hash: md5
+      md5: 1c31b84b054bae3dd12592bca44dc3aa.dir
+      size: 110285630
+      nfiles: 6878
+    outs:
+    - path: reports/confusion-matrix.png
+      hash: md5
+      md5: 934e010429062dc40c461d25a0ebd872
+      size: 45794
+    - path: reports/evaluation.json
+      hash: md5
+      md5: cd8711640980e07ad15f0781a95344d6
+      size: 947
+  package:
+    cmd: python -m brainai.evaluate package
+    deps:
+    - path: artifacts/checkpoint.pt
+      hash: md5
+      md5: f713fd402b72a29a6782c15d8affc72a
+      size: 6219269
+    - path: artifacts/manifest.json
+      hash: md5
+      md5: db77c81724ccbf04d3130c33470ec0bc
+      size: 892
+    - path: brainai/common.py
+      hash: md5
+      md5: d5cbb6817218895a039d0ec7637c953f
+      size: 2007
+    - path: brainai/evaluate.py
+      hash: md5
+      md5: 1146018144e036b4c1cd217d9ac15ba2
+      size: 3879
+    - path: brainai/model.py
+      hash: md5
+      md5: 4f327905c26755429e393df226bb38f9
+      size: 4390
+    - path: data/processed
+      hash: md5
+      md5: 1c31b84b054bae3dd12592bca44dc3aa.dir
+      size: 110285630
+      nfiles: 6878
+    - path: reports/evaluation.json
+      hash: md5
+      md5: cd8711640980e07ad15f0781a95344d6
+      size: 947
+    outs:
+    - path: artifacts/model
+      hash: md5
+      md5: 1b2ec7caad0143c35e0c29c61906edf5.dir
+      size: 6313564
+      nfiles: 17
+    - path: reports/packaging.json
+      hash: md5
+      md5: 815c7f4fcd189454a829bbfafcbe91b2
+      size: 123
+  check:
+    cmd: sh scripts/ci.sh --checks-only
+    deps:
+    - path: brainai
+      hash: md5
+      md5: eedf1cbe0c4edeb9d0c959f96adf2cb6.dir
+      size: 38042
+      nfiles: 8
+    - path: pyproject.toml
+      hash: md5
+      md5: d90802ca6e8bb41679d841f11ca6138d
+      size: 183
+    - path: requirements-lock.txt
+      hash: md5
+      md5: 0dee7798652bebbe6779293e0854dc79
+      size: 2918
+    - path: scripts
+      hash: md5
+      md5: 200237532c458c14da02f98449c3acb5.dir
+      size: 6858
+      nfiles: 2
+    - path: tests
+      hash: md5
+      md5: e62fd9c02b8e05b4319b259a3748f7f0.dir
+      size: 18456
+      nfiles: 3
+    outs:
+    - path: reports/code-checks.json
+      hash: md5
+      md5: 5aa8d2cf44fa7384b855e8b1f0f9d33f
+      size: 81

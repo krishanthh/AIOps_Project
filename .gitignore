@@ -1,0 +1,21 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.coverage
+.env
+data/
+artifacts/
+logs/
+mlruns/
+mlflow.db*
+frontend/node_modules/
+frontend/dist/
+reports/pipeline.json
+reports/pipeline.lock
+reports/pipeline-runs/
+reports/live-stats.json
+tracking/
+
+# Regenerated execution evidence is included in the submission bundle.
+reports/junit.xml

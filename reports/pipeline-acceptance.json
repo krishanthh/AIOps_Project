@@ -1,0 +1,99 @@
+{
+  "cases": [
+    {
+      "case": "all-seven-dvc-stages-succeeded",
+      "passed": true
+    },
+    {
+      "case": "complete-prepared-splits",
+      "passed": true,
+      "actual_counts": {
+        "train": 4239,
+        "val": 1060,
+        "test": 1579
+      }
+    },
+    {
+      "case": "ray-preparation-throughput-measured",
+      "passed": true,
+      "images_per_second": 224.58609769705674
+    },
+    {
+      "case": "interrupted-run-preserved-as-history",
+      "passed": true
+    },
+    {
+      "case": "bounded-training-without-oom",
+      "passed": true,
+      "memory_limit_bytes": 1610612736,
+      "exit_code": 0
+    }
+  ],
+  "completed_run": {
+    "run_id": "01565b1a5e744fc7a1c966553d80b83e",
+    "pid": 1,
+    "status": "success",
+    "started_at": 1794694888.414079,
+    "stages": {
+      "check": {
+        "status": "success",
+        "started_at": 1794694888.414081,
+        "seconds": 17.99525130802067,
+        "exit_code": 0,
+        "log": "01565b1a5e744fc7a1c966553d80b83e-check.log"
+      },
+      "acquire": {
+        "status": "success",
+        "started_at": 1794694906.4140935,
+        "seconds": 9.040740940981777,
+        "exit_code": 0,
+        "log": "01565b1a5e744fc7a1c966553d80b83e-acquire.log"
+      },
+      "split": {
+        "status": "success",
+        "started_at": 1794694915.457253,
+        "seconds": 18.536170167004457,
+        "exit_code": 0,
+        "log": "01565b1a5e744fc7a1c966553d80b83e-split.log"
+      },
+      "prepare": {
+        "status": "success",
+        "started_at": 1794694933.9944007,
+        "seconds": 38.991040282999165,
+        "exit_code": 0,
+        "log": "01565b1a5e744fc7a1c966553d80b83e-prepare.log"
+      },
+      "train": {
+        "status": "success",
+        "started_at": 1794694972.9869723,
+        "seconds": 77.29376072497689,
+        "exit_code": 0,
+        "log": "01565b1a5e744fc7a1c966553d80b83e-train.log"
+      },
+      "evaluate": {
+        "status": "success",
+        "started_at": 1794695050.2819848,
+        "seconds": 30.96181978500681,
+        "exit_code": 0,
+        "log": "01565b1a5e744fc7a1c966553d80b83e-evaluate.log"
+      },
+      "package": {
+        "status": "success",
+        "started_at": 1794695081.2449918,
+        "seconds": 16.424887860979652,
+        "exit_code": 0,
+        "log": "01565b1a5e744fc7a1c966553d80b83e-package.log"
+      }
+    },
+    "finished_at": 1794695097.6709192
+  },
+  "preparation": {
+    "engine": "Ray",
+    "workers": 2,
+    "processed": 6878,
+    "seconds": 30.62522600698867,
+    "images_per_second": 224.58609769705674,
+    "baseline_brightness_mean": 0.1807706468261992,
+    "baseline_brightness_std": 0.06576371195327457
+  }
+}

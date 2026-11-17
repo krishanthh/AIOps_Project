@@ -1,0 +1,124 @@
+x-app: &app
+  image: brainai-app:local
+  user: "1000:1000"
+  environment:
+    HOME: /tmp
+  volumes:
+    - ./artifacts:/app/artifacts:ro
+    - ./reports:/app/reports
+    - ./logs:/app/logs
+  restart: unless-stopped
+services:
+  frontend:
+    mem_limit: 64m
+    memswap_limit: 64m
+    build: ./frontend
+    ports: ["127.0.0.1:3100:80"]
+    depends_on: [backend]
+    healthcheck:
+      test: [CMD, wget, -q, -O, /dev/null, http://127.0.0.1/healthz]
+      interval: 15s
+      timeout: 3s
+      retries: 3
+  backend:
+    <<: *app
+    build: .
+    mem_limit: 384m
+    memswap_limit: 384m
+    cpus: 1.0
+    environment:
+      MODEL_SERVING_URL: http://serving:5001
+      MLFLOW_SERVICE_URL: http://mlflow:5000
+      ENABLE_PIPELINE_CONTROL: "false"
+      HOME: /tmp
+    ports: ["127.0.0.1:8000:8000"]
+    depends_on: [serving]
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health')"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+  serving:
+    <<: *app
+    mem_limit: 768m
+    memswap_limit: 768m
+    cpus: 2.0
+    command: [mlflow, models, serve, -m, "${MODEL_ARTIFACT_PATH:-artifacts/model}", --host, 0.0.0.0, --port, "5001", --workers, "1", --env-manager, local]
+    environment:
+      SERVING_METRICS: "true"
+      MLFLOW_TRACKING_URI: file:///tmp/mlruns
+      HOME: /tmp
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:5001/ping')"]
+      start_period: 60s
+      interval: 15s
+      timeout: 5s
+      retries: 3
+  mlflow:
+    <<: *app
+    mem_limit: 512m
+    memswap_limit: 512m
+    cpus: 1.0
+    command: [mlflow, server, --host, 0.0.0.0, --port, "5000", --workers, "1", --backend-store-uri, "sqlite:////tracking/mlflow.db", --artifacts-destination, /tracking/artifacts, --serve-artifacts]
+    ports: ["127.0.0.1:5000:5000"]
+    volumes: ["./tracking:/tracking"]
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:5000/health')"]
+      interval: 20s
+      timeout: 5s
+      retries: 3
+  frontend-exporter:
+    mem_limit: 32m
+    memswap_limit: 32m
+    image: nginx/nginx-prometheus-exporter:1.4.2
+    command: [--nginx.scrape-uri=http://frontend/stub_status]
+    depends_on: [frontend]
+    restart: unless-stopped
+  prometheus:
+    mem_limit: 192m
+    memswap_limit: 192m
+    image: prom/prometheus:v3.4.1
+    ports: ["127.0.0.1:9090:9090"]
+    volumes:
+      - ./ops/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - ./ops/alerts.yml:/etc/prometheus/alerts.yml:ro
+      - prometheus-data:/prometheus
+    restart: unless-stopped
+  grafana:
+    mem_limit: 384m
+    memswap_limit: 384m
+    image: grafana/grafana:12.0.2
+    ports: ["127.0.0.1:3101:3000"]
+    environment:
+      GF_SECURITY_ADMIN_USER: admin
+      GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_PASSWORD:-brainai-local-demo}
+      GF_USERS_ALLOW_SIGN_UP: "false"
+      GF_METRICS_ENABLED: "true"
+    volumes:
+      - ./ops/grafana/provisioning:/etc/grafana/provisioning:ro
+      - ./ops/grafana/dashboards:/var/lib/grafana/dashboards:ro
+      - grafana-data:/var/lib/grafana
+    restart: unless-stopped
+  trainer:
+    <<: *app
+    mem_limit: 1536m
+    memswap_limit: 1536m
+    cpus: 2.0
+    profiles: [training]
+    depends_on: [mlflow]
+    restart: "no"
+    working_dir: /workspace
+    volumes:
+      - .:/workspace
+      - ../.brainai-model-cache:/cache
+      - ../.brainai-dvc-remote:/.brainai-dvc-remote
+    environment:
+      HOME: /tmp
+      TORCH_HOME: /cache/torch
+      BRAINAI_ROOT: /workspace
+      MLFLOW_TRACKING_URI: http://mlflow:5000
+    command: [python, -m, brainai.pipeline]
+    shm_size: 256m
+volumes:
+  prometheus-data:
+  grafana-data:
