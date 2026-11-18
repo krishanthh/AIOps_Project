@@ -4,7 +4,7 @@
 
 BrainScope predicts glioma, meningioma, pituitary tumour, or no tumour from a JPEG/PNG brain MRI image and provides a Grad-CAM visual explanation.
 
-**Video demonstration:** [Watch the application recording](https://drive.google.com/drive/folders/1Q4nircJrvh6BINYBafkLjs410FEqFl9O).
+**Video demonstration:** [Watch the application recording](https://drive.google.com/drive/folders/1Q4nircJrvh6BlNYBafkLjs410FEqFl9O?usp=sharing).
 
 I use React, FastAPI, PyTorch MobileNetV3 Small, Ray, DVC, MLflow Projects/serving, Docker Compose, Prometheus, and Grafana. The implementation runs locally. The [test report](reports/TEST_REPORT.md) records the executed checks, measured results, and limitations.
 
